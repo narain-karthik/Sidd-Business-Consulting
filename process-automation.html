@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Intelligent Process Automation Services - Sidd Business Consulting. Making business processes smarter, faster, and more connected through automation, ERP implementation, inventory optimization, and on-time delivery.">
+  <title>Process Automation | Sidd Business Consulting</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="service-detail-body">
+
+  <!-- Floating Glassmorphic Header Navigation -->
+  <header class="header-wrapper">
+    <nav class="glass-navbar" aria-label="Main Navigation">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Sidd Business Consulting Homepage">
+        <img src="logo-white.png" alt="Sidd" class="logo-img logo-light">
+        <img src="logo.png" alt="Sidd" class="logo-img logo-dark">
+        <span class="logo-subtext">Business Consulting</span>
+      </a>
+
+      <!-- Main Navigation Menu -->
+      <ul class="nav-links">
+        <li class="nav-item has-dropdown">
+          <a href="services.html" class="nav-link-btn active" aria-expanded="false" aria-haspopup="true">
+            Our Service <span class="chevron-down">▾</span>
+          </a>
+          <div class="mega-dropdown services-dropdown">
+            <div class="dropdown-inner services-grid">
+              
+              <!-- Service 1 -->
+              <a href="business-transformation.html" class="service-card-item">
+                <span class="service-tag">Operations & Systems</span>
+                <h3>Business Transformation</h3>
+                <p class="service-tagline">Transforming the way your business operates.</p>
+                <p class="service-desc">
+                  We improve processes, strengthen accountability and create structured systems that enable businesses to operate more efficiently and consistently.
+                </p>
+                <span class="service-cta">Explore Transformation →</span>
+              </a>
+
+              <!-- Service 2 (Active Current) -->
+              <a href="process-automation.html" class="service-card-item current-page">
+                <span class="service-tag">Efficiency & Scale</span>
+                <h3>Process Automation</h3>
+                <p class="service-tagline">Making business processes smarter, faster and more connected.</p>
+                <p class="service-desc">
+                  We combine process improvement, technology and automation to reduce manual effort, improve visibility and build scalable operations.
+                </p>
+                <span class="service-cta">Current Service • Explore Details →</span>
+              </a>
+
+              <!-- Service 3 -->
+              <a href="growth-strategic-consulting.html" class="service-card-item">
+                <span class="service-tag">Data & Intelligence</span>
+                <h3>Growth & Strategic Consulting</h3>
+                <p class="service-tagline">Turning business data into better decisions.</p>
+                <p class="service-desc">
+                  We help management understand performance, identify opportunities and build practical strategies for sustainable business growth.
+                </p>
+                <span class="service-cta">Explore Growth →</span>
+              </a>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#connect" class="nav-link">Contact Us</a>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <button class="nav-link-btn" aria-expanded="false" aria-haspopup="true">
+            About Us <span class="chevron-down">▾</span>
+          </button>
+          <div class="mega-dropdown dropdown-medium">
+            <div class="dropdown-inner">
+              <div class="dropdown-col">
+                <span class="dropdown-heading">Our Company</span>
+                <a href="index.html#about" class="dropdown-item"><strong>About Sidd Business Consulting</strong><small>Leading enterprise strategy & IT transformation provider</small></a>
+                <a href="index.html#leadership" class="dropdown-item"><strong>Leadership Team</strong><small>Meet our global leadership and board</small></a>
+                <a href="index.html#partners" class="dropdown-item"><strong>Global Strategic Alliances</strong><small>Ecosystem of premier hyperscalers & tech leaders</small></a>
+              </div>
+              <div class="dropdown-col">
+                <span class="dropdown-heading">Impact</span>
+                <a href="index.html#esg" class="dropdown-item"><strong>Environmental & Social (ESG)</strong><small>Building a sustainable, inclusive future</small></a>
+                <a href="index.html#culture" class="dropdown-item"><strong>The Sidd Way</strong><small>Our values, code of ethics and purpose</small></a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="index.html#career" class="nav-link">Career</a>
+        </li>
+      </ul>
+
+      <!-- Right Action Items -->
+      <div class="nav-actions">
+        <a href="index.html#investors" class="utility-link">
+          <span>Investors</span>
+          <svg class="icon-external" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3.5 1.5h7v7M10.5 1.5l-8 8"/>
+          </svg>
+        </a>
+
+        <span class="action-separator">|</span>
+
+        <!-- Consult an Expert Button -->
+        <button class="btn-consult" id="consultBtn" onclick="window.openConsultModal()">
+          <span>Consult an expert</span>
+          <span class="btn-arrow-circle">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Slide Arrow Controls (Linking back to Home) -->
+        <div class="arrow-group">
+          <a href="index.html" class="icon-pill-btn arrow-btn" aria-label="Return to Homepage" title="Homepage">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 12l-4-4 4-4"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Search Button -->
+        <button class="icon-pill-btn search-btn" id="searchBtn" aria-label="Open Search" title="Search">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Service Detail Hero Section -->
+  <section class="service-hero">
+    <div class="service-hero-overlay"></div>
+    <div class="service-hero-container">
+      
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="services.html">Our Services</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Process Automation</span>
+      </nav>
+
+      <div class="service-hero-badge">Service Pillar 02</div>
+      <h1 class="service-hero-title">
+        Intelligent Process Automation
+      </h1>
+      <p class="service-hero-tagline">
+        Making business processes smarter, faster and more connected.
+      </p>
+      <p class="service-hero-summary">
+        We combine process improvement, cutting-edge digital technology, and workflow automation to eliminate manual friction, reduce human error, and achieve seamless end-to-end organizational scale. From intelligent bot workflows to full ERP transition and supply chain optimization, we build connected enterprises.
+      </p>
+
+      <div class="service-hero-actions">
+        <button class="btn-primary-consult" onclick="window.openConsultModal()">
+          <span>Schedule an Automation Discovery</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+          </svg>
+        </button>
+        <a href="#core-capabilities" class="btn-secondary-anchor">
+          <span>Explore 5 Capabilities</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3.5v9M4 8.5l4 4 4-4"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="service-main-content">
+    
+    <!-- Section 1: Core Capabilities (5 Pillars from User Reference & Workbook) -->
+    <section class="service-section capabilities-section" id="core-capabilities">
+      <div class="section-container">
+        
+        <div class="section-header-center">
+          <span class="section-kicker">Core Capabilities</span>
+          <h2 class="section-heading">How We Automate & Modernize</h2>
+          <p class="section-subtext">
+            Five specialized practices to eliminate repetitive manual overhead, connect siloed enterprise data, and deliver dependable operational speed.
+          </p>
+        </div>
+
+        <div class="capabilities-grid capabilities-grid-five">
+          
+          <!-- Pillar 1: Process Automation -->
+          <article class="capability-card">
+            <div class="capability-card-top">
+              <span class="pillar-number">01</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">Process Automation</h3>
+            <p class="capability-desc">
+              We identify repetitive, manual and time-consuming activities that can be streamlined through automation. Our approach focuses on reducing manual effort, improving accuracy and creating faster, more reliable workflows.
+            </p>
+            <ul class="capability-bullets">
+              <li>Repetitive task identification & automation readiness analysis</li>
+              <li>Robotic Process Automation (RPA) & script-based execution</li>
+              <li>Error-free data entry and cross-system data transfer</li>
+              <li>Faster turnaround times and substantial effort reduction</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 2: Automation & Digital Transformation -->
+          <article class="capability-card">
+            <div class="capability-card-top">
+              <span class="pillar-number">02</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">Automation & Digital Transformation</h3>
+            <p class="capability-desc">
+              We help businesses redesign traditional processes using digital tools, automation and integrated workflows. The objective is to create connected operations where information flows efficiently across functions and management has better visibility.
+            </p>
+            <ul class="capability-bullets">
+              <li>Redesigning legacy paper/spreadsheet workflows into digital apps</li>
+              <li>Cross-departmental API integrations & continuous data sync</li>
+              <li>Real-time management dashboards for operational telemetry</li>
+              <li>Improved cross-functional transparency and governance</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 3: ERP Product Selection & Implementation -->
+          <article class="capability-card">
+            <div class="capability-card-top">
+              <span class="pillar-number">03</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                  <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">ERP Product Selection & Implementation</h3>
+            <p class="capability-desc">
+              We help businesses evaluate ERP solutions based on their processes, business requirements, scalability and budget. From product selection to implementation, process mapping and user adoption, we support the transition towards an integrated business system.
+            </p>
+            <ul class="capability-bullets">
+              <li>Vendor-neutral RFP evaluation and requirement matrix scoring</li>
+              <li>End-to-end system architecture & master data clean-up</li>
+              <li>Process mapping and workflow customization</li>
+              <li>Change management, user training, and post-go-live adoption</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 4: Inventory Optimization -->
+          <article class="capability-card">
+            <div class="capability-card-top">
+              <span class="pillar-number">04</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">Inventory Optimization</h3>
+            <p class="capability-desc">
+              We analyse inventory movement, demand patterns, stock levels and operational requirements to identify excess, slow-moving and insufficient inventory. Our approach helps businesses improve inventory availability while reducing unnecessary working capital.
+            </p>
+            <ul class="capability-bullets">
+              <li>Historical consumption & demand variability modeling</li>
+              <li>Safety stock and re-order point (ROP) dynamic calibration</li>
+              <li>Identification of slow-moving and dead inventory assets</li>
+              <li>Significant working capital unlock and inventory availability boost</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 5: On-Time Delivery -->
+          <article class="capability-card capability-card-span">
+            <div class="capability-card-top">
+              <span class="pillar-number">05</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">On-Time Delivery</h3>
+            <p class="capability-desc">
+              We analyse the complete order-to-delivery cycle to identify delays, bottlenecks and process gaps. By improving planning, coordination, tracking and accountability, we help businesses strengthen delivery performance and customer reliability.
+            </p>
+            <ul class="capability-bullets">
+              <li>Order-to-cash & lead-time value stream mapping</li>
+              <li>Production planning, procurement sync, and dispatch staging</li>
+              <li>Proactive delay alerting and customer tracking transparency</li>
+              <li>Substantial increase in On-Time In-Full (OTIF) fulfillment rates</li>
+            </ul>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 2: Methodology Roadmap -->
+    <section class="service-section lifecycle-section">
+      <div class="section-container">
+        
+        <div class="section-header-left">
+          <span class="section-kicker">Automation Execution Framework</span>
+          <h2 class="section-heading">How We Deploy Scalable Automation</h2>
+          <p class="section-subtext">
+            A low-risk, phased rollout that guarantees tangible user adoption and rapid ROI without business interruption.
+          </p>
+        </div>
+
+        <div class="lifecycle-timeline">
+          
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Phase 01</span>
+              <h4>Process Discovery & Audit</h4>
+            </div>
+            <p>
+              Map end-to-end task cycles, benchmark human-hour allocation, and identify high-value automation candidates.
+            </p>
+          </div>
+
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Phase 02</span>
+              <h4>Architecture & Tool Selection</h4>
+            </div>
+            <p>
+              Evaluate software options, engineer data integration pipelines, and specify security and compliance parameters.
+            </p>
+          </div>
+
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Phase 03</span>
+              <h4>Agile Build & Pilot Run</h4>
+            </div>
+            <p>
+              Build customized automation scripts, integrate ERP workflows, and validate performance with live operational cohorts.
+            </p>
+          </div>
+
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Phase 04</span>
+              <h4>Full Rollout & KPI Governance</h4>
+            </div>
+            <p>
+              Deploy enterprise-wide, coach team members on new automated systems, and institute continuous monitoring telemetry.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Business Impact Banner -->
+    <section class="service-section impact-section">
+      <div class="section-container">
+        
+        <div class="impact-inner-banner">
+          <div class="impact-content">
+            <span class="section-kicker kicker-light">Tangible Outcomes</span>
+            <h2 class="impact-title">Measurable Gains in Speed, Capital & Accuracy</h2>
+            <p class="impact-desc">
+              By replacing manual steps with connected automation, organizations achieve faster delivery, lower working capital costs, and total operational predictability.
+            </p>
+          </div>
+
+          <div class="impact-stats-grid">
+            <div class="stat-box">
+              <span class="stat-number">65%</span>
+              <span class="stat-label">Reduction in manual processing and repetitive administrative tasks</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">99.4%</span>
+              <span class="stat-label">Accuracy rate in automated order processing and data flow</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">30%</span>
+              <span class="stat-label">Reduction in excess inventory holding and idle working capital</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">95%+</span>
+              <span class="stat-label">Consistently achieved On-Time Delivery (OTD) performance</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Other Services Navigation -->
+    <section class="service-section other-services-section">
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="section-kicker">Explore Complementary Pillars</span>
+          <h2 class="section-heading">Connected Business Services</h2>
+        </div>
+
+        <div class="other-services-grid">
+          
+          <div class="other-service-card">
+            <span class="other-tag">Service Pillar 01</span>
+            <h3>Business Transformation</h3>
+            <p>Transforming the way your business operates through Workload Assessment, SOP Preparation, SOP Implementation, and Annual Business Planning.</p>
+            <a href="business-transformation.html" class="service-link-btn">Explore Transformation →</a>
+          </div>
+
+          <div class="other-service-card">
+            <span class="other-tag">Service Pillar 03</span>
+            <h3>Growth & Strategic Consulting</h3>
+            <p>Turning operational and financial data into actionable decisions for sustainable business expansion, margin control, and marketing strategy.</p>
+            <a href="growth-strategic-consulting.html" class="service-link-btn">Explore Strategy →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Connect With Us Section -->
+  <section class="connect-section" id="connect">
+    <div class="connect-container">
+      
+      <div class="connect-content">
+        <h2 class="connect-title">Connect with us</h2>
+        <p class="connect-desc">
+          Ready to automate workflows, select the right ERP, or optimize your inventory and on-time delivery? Let's talk with our automation experts.
+        </p>
+        <button class="btn-connect-talk" onclick="window.openConsultModal()">
+          <span>Let's talk</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 4l4 4-4 4"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="connect-graphic" aria-hidden="true">
+        <svg class="connect-lines-svg" viewBox="0 0 800 360" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="blueLatticeFade2" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+              <stop offset="16%" stop-color="#ffffff" stop-opacity="0.9" />
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+            </linearGradient>
+            <mask id="latticeMask2">
+              <rect width="800" height="360" fill="url(#blueLatticeFade2)" />
+            </mask>
+            <pattern id="blueLattice2" width="28" height="360" patternUnits="userSpaceOnUse">
+              <line x1="0" y1="0" x2="0" y2="360" stroke="#0B2360" stroke-width="1.3" />
+              <line x1="0" y1="180" x2="28" y2="0" stroke="#0B2360" stroke-width="1.3" />
+              <line x1="0" y1="180" x2="28" y2="360" stroke="#0B2360" stroke-width="1.3" />
+            </pattern>
+          </defs>
+          <rect width="800" height="360" fill="url(#blueLattice2)" mask="url(#latticeMask2)" />
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="footer" role="contentinfo">
+    <div class="footer-container">
+      
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo" aria-label="Sidd Business Consulting Homepage">
+          <img src="logo.png" alt="Sidd" class="footer-logo-img">
+          <span class="footer-logo-sub">Business Consulting</span>
+        </a>
+
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.97 0 1.76-.79 1.76-1.76a1.76 1.76 0 1 0-3.52 0c0 .97.79 1.76 1.76 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav-grid">
+        <div class="footer-section">
+          <h3 class="footer-heading">Services</h3>
+          <div class="heading-accent-bar"></div>
+          <div class="footer-subcolumns">
+            <ul class="footer-link-list">
+              <li><a href="services.html">All Services Overview</a></li>
+              <li><a href="business-transformation.html">Business Transformation</a></li>
+              <li><a href="process-automation.html" style="font-weight: 600; color: #0B2360;">Process Automation</a></li>
+              <li><a href="growth-strategic-consulting.html">Growth & Strategic Consulting</a></li>
+              <li><a href="#erp-implementation">ERP Selection & Implementation</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="#on-time-delivery">On-Time Delivery</a></li>
+              <li><a href="#digital-transformation">Digital Transformation</a></li>
+              <li><a href="index.html#alliances">Alliances & Technology</a></li>
+              <li><a href="#connect">Consult an Expert</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-heading">About Us</h3>
+          <div class="heading-accent-bar"></div>
+          <div class="footer-subcolumns">
+            <ul class="footer-link-list">
+              <li><a href="index.html#about">About Sidd Business Consulting</a></li>
+              <li><a href="index.html#leadership">Leadership & Board</a></li>
+              <li><a href="index.html#career">Careers at Sidd</a></li>
+              <li><a href="index.html#culture">Culture & Values</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="index.html#news">News & Press Releases</a></li>
+              <li><a href="index.html#investors">Investor Relations</a></li>
+              <li><a href="index.html#case-studies">Client Success Stories</a></li>
+              <li><a href="#connect">Contact Advisory</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy</a>
+          <span class="legal-separator">|</span>
+          <a href="#terms">Terms</a>
+          <span class="legal-separator">|</span>
+          <a href="#security">Security</a>
+          <span class="legal-separator">|</span>
+          <a href="#certifications">Certifications</a>
+          <span class="legal-separator">|</span>
+          <a href="#sitemap">Sitemap</a>
+          <span class="legal-separator">|</span>
+          <a href="#do-not-sell">Do not sell or share my personal information</a>
+          <span class="legal-separator">|</span>
+          <a href="#accessibility">Accessibility</a>
+          <span class="legal-separator">|</span>
+          <a href="#cookies">Cookie Preferences</a>
+        </div>
+
+        <div class="footer-locale">
+          <button class="footer-locale-btn" id="footerLocaleBtn" aria-label="Region selector">
+            <span>US - EN</span>
+            <span class="locale-arrow">▴</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>Copyright © 2026 Sidd Business Consulting Inc. All rights reserved</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Consult Modal -->
+  <div class="modal-overlay" id="consultModal" aria-hidden="true">
+    <div class="modal-card consult-card">
+      <button class="modal-close-btn" id="closeConsultModal" aria-label="Close Modal">✕</button>
+      <div class="consult-header">
+        <span class="badge-accent">Global Advisory</span>
+        <h2>Consult a Sidd Automation Specialist</h2>
+        <p>Connect with process automation and ERP architects to eliminate bottlenecks and optimize operational cycle times.</p>
+      </div>
+      <form class="consult-form" id="consultForm" onsubmit="event.preventDefault(); window.submitConsult();">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Jane" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Doe" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="businessEmail">Business Email</label>
+          <input type="email" id="businessEmail" placeholder="jane.doe@enterprise.com" required>
+        </div>
+        <div class="form-group">
+          <label for="topic">Area of Interest</label>
+          <select id="topic" required>
+            <option value="process-automation" selected>Process Automation & RPA</option>
+            <option value="digital-transformation">Automation & Digital Transformation</option>
+            <option value="erp-selection">ERP Product Selection & Implementation</option>
+            <option value="inventory-optimization">Inventory Optimization & Working Capital</option>
+            <option value="on-time-delivery">On-Time Delivery & Order Tracking</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comments">Message / Scope</label>
+          <textarea id="comments" rows="3" placeholder="Tell us about your current systems, processes, or timeline..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit-consult">
+          Submit Consultation Request →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Search Modal Overlay -->
+  <div class="modal-overlay" id="searchModal" aria-hidden="true">
+    <div class="modal-card search-card">
+      <div class="search-header">
+        <div class="search-input-wrap">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Search automation, ERP, inventory..." autofocus>
+        </div>
+        <button class="modal-close-btn" id="closeSearchModal" aria-label="Close Search">✕</button>
+      </div>
+      <div class="search-suggestions">
+        <span class="suggestion-label">Popular Searches:</span>
+        <button class="suggestion-tag">ERP Selection</button>
+        <button class="suggestion-tag">Inventory Optimization</button>
+        <button class="suggestion-tag">On-Time Delivery</button>
+        <button class="suggestion-tag">RPA Workflows</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toastNotification" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toastMessage">Consultation request sent successfully!</span>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="logo-white.png" alt="Sidd" class="drawer-logo-img">
+      <button class="modal-close-btn" id="closeMobileDrawer">✕</button>
+    </div>
+    <div class="drawer-content">
+      <a href="business-transformation.html" class="drawer-link">Business Transformation</a>
+      <a href="process-automation.html" class="drawer-link active">Process Automation</a>
+      <a href="growth-strategic-consulting.html" class="drawer-link">Growth & Strategy</a>
+      <a href="#connect" class="drawer-link" onclick="document.getElementById('mobileDrawer').classList.remove('active');">Contact Us</a>
+      <a href="index.html#about" class="drawer-link">About Us</a>
+      <a href="index.html#career" class="drawer-link">Career</a>
+      <hr class="drawer-divider">
+      <button class="btn-consult mobile-consult-btn" onclick="window.openConsultModal()">
+        <span>Consult an expert</span>
+        <span class="btn-arrow-circle">➔</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

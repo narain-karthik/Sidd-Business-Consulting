@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Our Services - Sidd Business Consulting. Transforming ambition into operational execution through Business Transformation, Intelligent Process Automation, and Growth & Strategic Consulting.">
+  <title>Our Services | Sidd Business Consulting</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="service-detail-body">
+
+  <!-- Floating Glassmorphic Header Navigation -->
+  <header class="header-wrapper">
+    <nav class="glass-navbar" aria-label="Main Navigation">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Sidd Business Consulting Homepage">
+        <img src="logo-white.png" alt="Sidd" class="logo-img logo-light">
+        <img src="logo.png" alt="Sidd" class="logo-img logo-dark">
+        <span class="logo-subtext">Business Consulting</span>
+      </a>
+
+      <!-- Main Navigation Menu -->
+      <ul class="nav-links">
+        <li class="nav-item has-dropdown">
+          <a href="services.html" class="nav-link-btn active" aria-expanded="false" aria-haspopup="true">
+            Our Service <span class="chevron-down">▾</span>
+          </a>
+          <div class="mega-dropdown services-dropdown">
+            <div class="dropdown-inner services-grid">
+              
+              <!-- Service 1 -->
+              <a href="business-transformation.html" class="service-card-item">
+                <span class="service-tag">Operations & Systems</span>
+                <h3>Business Transformation</h3>
+                <p class="service-tagline">Transforming the way your business operates.</p>
+                <p class="service-desc">
+                  We improve processes, strengthen accountability and create structured systems that enable businesses to operate more efficiently and consistently.
+                </p>
+                <span class="service-cta">Explore Transformation →</span>
+              </a>
+
+              <!-- Service 2 -->
+              <a href="process-automation.html" class="service-card-item">
+                <span class="service-tag">Efficiency & Scale</span>
+                <h3>Process Automation</h3>
+                <p class="service-tagline">Making business processes smarter, faster and more connected.</p>
+                <p class="service-desc">
+                  We combine process improvement, technology and automation to reduce manual effort, improve visibility and build scalable operations.
+                </p>
+                <span class="service-cta">Explore Automation →</span>
+              </a>
+
+              <!-- Service 3 -->
+              <a href="growth-strategic-consulting.html" class="service-card-item">
+                <span class="service-tag">Data & Intelligence</span>
+                <h3>Growth & Strategic Consulting</h3>
+                <p class="service-tagline">Turning business data into better decisions.</p>
+                <p class="service-desc">
+                  We help management understand performance, identify opportunities and build practical strategies for sustainable business growth.
+                </p>
+                <span class="service-cta">Explore Growth →</span>
+              </a>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#connect" class="nav-link">Contact Us</a>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <button class="nav-link-btn" aria-expanded="false" aria-haspopup="true">
+            About Us <span class="chevron-down">▾</span>
+          </button>
+          <div class="mega-dropdown dropdown-medium">
+            <div class="dropdown-inner">
+              <div class="dropdown-col">
+                <span class="dropdown-heading">Our Company</span>
+                <a href="index.html#about" class="dropdown-item"><strong>About Sidd Business Consulting</strong><small>Leading enterprise strategy & IT transformation provider</small></a>
+                <a href="index.html#leadership" class="dropdown-item"><strong>Leadership Team</strong><small>Meet our global leadership and board</small></a>
+                <a href="index.html#partners" class="dropdown-item"><strong>Global Strategic Alliances</strong><small>Ecosystem of premier hyperscalers & tech leaders</small></a>
+              </div>
+              <div class="dropdown-col">
+                <span class="dropdown-heading">Impact</span>
+                <a href="index.html#esg" class="dropdown-item"><strong>Environmental & Social (ESG)</strong><small>Building a sustainable, inclusive future</small></a>
+                <a href="index.html#culture" class="dropdown-item"><strong>The Sidd Way</strong><small>Our values, code of ethics and purpose</small></a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="index.html#career" class="nav-link">Career</a>
+        </li>
+      </ul>
+
+      <!-- Right Action Items -->
+      <div class="nav-actions">
+        <a href="index.html#investors" class="utility-link">
+          <span>Investors</span>
+          <svg class="icon-external" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3.5 1.5h7v7M10.5 1.5l-8 8"/>
+          </svg>
+        </a>
+
+        <span class="action-separator">|</span>
+
+        <!-- Consult an Expert Button -->
+        <button class="btn-consult" id="consultBtn" onclick="window.openConsultModal()">
+          <span>Consult an expert</span>
+          <span class="btn-arrow-circle">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Slide Arrow Controls (Linking back to Home) -->
+        <div class="arrow-group">
+          <a href="index.html" class="icon-pill-btn arrow-btn" aria-label="Return to Homepage" title="Homepage">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 12l-4-4 4-4"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Search Button -->
+        <button class="icon-pill-btn search-btn" id="searchBtn" aria-label="Open Search" title="Search">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Service Detail Hero Section -->
+  <section class="service-hero">
+    <div class="service-hero-overlay"></div>
+    <div class="service-hero-container">
+      
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Our Services</span>
+      </nav>
+
+      <div class="service-hero-badge">Comprehensive Capability Portfolio</div>
+      <h1 class="service-hero-title">
+        Enterprise Services & Solutions
+      </h1>
+      <p class="service-hero-tagline">
+        Transforming operational ambition into predictable, scalable execution.
+      </p>
+      <p class="service-hero-summary">
+        Sidd Business Consulting partners with ambitious organizations to eliminate operational friction, automate complex workflows, and unlock high-margin growth. Explore our interactive capability reader and strategic methodology below.
+      </p>
+
+      <div class="service-hero-actions">
+        <a href="#pattern-reader" class="btn-primary-consult">
+          <span>Explore Capability Reader</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3.5v9M4 8.5l4 4 4-4"/>
+          </svg>
+        </a>
+        <button class="btn-secondary-anchor" onclick="window.openConsultModal()">
+          <span>Speak With a Partner</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="service-main-content">
+    
+    <!-- PATTERN 1: Interactive Numbered Tab Reader (White Background - Image 1 Reference) -->
+    <section class="pattern-reader-section" id="pattern-reader">
+      <div class="pattern-reader-container">
+        
+        <!-- Left Sticky Sidebar (Matching Image 1) -->
+        <aside class="reader-sidebar">
+          
+          <div class="reader-brand-block">
+            <span class="reader-kicker">SIDD</span>
+            <span class="reader-title-line">SERVICES</span>
+            <span class="reader-sub-line">REPORT</span>
+          </div>
+
+          <nav class="vertical-tab-list" role="tablist" aria-label="Service Chapters">
+            <button class="vertical-tab-btn active" role="tab" aria-selected="true" data-tab="tab-01">
+              <span class="tab-num">01.</span>
+              <span class="tab-text">A growing execution gap</span>
+            </button>
+            <button class="vertical-tab-btn" role="tab" aria-selected="false" data-tab="tab-02">
+              <span class="tab-num">02.</span>
+              <span class="tab-text">Workload assessment</span>
+            </button>
+            <button class="vertical-tab-btn" role="tab" aria-selected="false" data-tab="tab-03">
+              <span class="tab-num">03.</span>
+              <span class="tab-text">SOP preparation & controls</span>
+            </button>
+            <button class="vertical-tab-btn" role="tab" aria-selected="false" data-tab="tab-04">
+              <span class="tab-num">04.</span>
+              <span class="tab-text">SOP everyday execution</span>
+            </button>
+            <button class="vertical-tab-btn" role="tab" aria-selected="false" data-tab="tab-05">
+              <span class="tab-num">05.</span>
+              <span class="tab-text">Intelligent process automation</span>
+            </button>
+            <button class="vertical-tab-btn" role="tab" aria-selected="false" data-tab="tab-06">
+              <span class="tab-num">06.</span>
+              <span class="tab-text">ERP & system integration</span>
+            </button>
+            <button class="vertical-tab-btn" role="tab" aria-selected="false" data-tab="tab-07">
+              <span class="tab-num">07.</span>
+              <span class="tab-text">Growth, finance & strategy</span>
+            </button>
+          </nav>
+
+        </aside>
+
+        <!-- Right Content Area (Matching Image 1) -->
+        <div class="reader-content-area">
+          
+          <!-- Tab Panel 01 -->
+          <article class="reader-tab-panel active" id="tab-01" role="tabpanel">
+            <h2 class="reader-headline">
+              There's a growing gap between ambition and operational execution
+            </h2>
+            <div class="reader-prose">
+              <p>
+                In the past year, enterprise digital ambitions and market competition have increased dramatically. Organizations have invested heavily in new software, expanded headcount, and announced broad transformation mandates. Yet while executive ambitions accelerated, operational readiness and day-to-day execution consistency moved in the opposite direction.
+              </p>
+              <p>
+                The primary challenge facing leadership is no longer whether organizations can conceptualize growth—it's whether they can systematically prepare their workforce, eliminate repetitive manual bottlenecks, and build the structured processes needed to scale without chaos.
+              </p>
+              <p>
+                Drawing on deep operational engagements across manufacturing, distribution, retail, and technology enterprises, Sidd Business Consulting builds structured operating models that convert high-level strategic decks into reliable daily business realities.
+              </p>
+            </div>
+            <div class="reader-action-row">
+              <a href="business-transformation.html" class="reader-cta-btn">
+                <span>Explore Business Transformation</span>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tab Panel 02 -->
+          <article class="reader-tab-panel" id="tab-02" role="tabpanel">
+            <h2 class="reader-headline">
+              Workload Assessment: Pinpointing invisible capacity leaks
+            </h2>
+            <div class="reader-prose">
+              <p>
+                We analyse workloads, responsibilities, processes, and resource utilisation to identify hidden bottlenecks, task duplication, and capacity gaps across functional departments.
+              </p>
+              <p>
+                Our rigorous diagnostic assessment helps executive leadership understand precisely where organizational time and payroll dollars are being spent, uncovering non-value-add steps and establishing clear productivity benchmarks.
+              </p>
+              <p>
+                By mapping resource bandwidth against actual commercial output, we help management re-balance responsibilities, remove friction, and set up teams for sustainable, high-throughput performance.
+              </p>
+            </div>
+            <div class="reader-action-row">
+              <a href="business-transformation.html#workload-assessment" class="reader-cta-btn">
+                <span>View Workload Methodology</span>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tab Panel 03 -->
+          <article class="reader-tab-panel" id="tab-03" role="tabpanel">
+            <h2 class="reader-headline">
+              SOP Preparation: Codifying institutional knowledge into standard controls
+            </h2>
+            <div class="reader-prose">
+              <p>
+                When critical business workflows live only in the heads of key individuals, businesses remain vulnerable to turnover, variance, and operational delays. We document mission-critical procedures into clear, practical Standard Operating Procedures (SOPs).
+              </p>
+              <p>
+                Each SOP clearly defines ownership, step-by-step procedural gates, supervisory control checkpoints, and expected outcomes, establishing consistent quality across geographically distributed teams.
+              </p>
+              <p>
+                Our standardized formats eliminate ambiguity, ensure regulatory and quality compliance, and provide incoming staff with instant clarity on how work is executed to the firm's standard.
+              </p>
+            </div>
+            <div class="reader-action-row">
+              <a href="business-transformation.html#sop-preparation" class="reader-cta-btn">
+                <span>Explore SOP Documentation</span>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tab Panel 04 -->
+          <article class="reader-tab-panel" id="tab-04" role="tabpanel">
+            <h2 class="reader-headline">
+              SOP Implementation: Moving from paper documentation to daily execution
+            </h2>
+            <div class="reader-prose">
+              <p>
+                The fatal flaw of traditional consulting is delivering static binders that gather dust on a shelf. We help front-line teams move from documented procedures into rigorous, everyday operational execution.
+              </p>
+              <p>
+                Through hands-on change management, role clarity workshops, interactive process coaching, and continuous audit cadences, we ensure SOPs become an inseparable part of your organization's daily culture.
+              </p>
+              <p>
+                Managers gain objective adoption dashboards, allowing leaders to recognize top performers and proactively coach team members facing friction.
+              </p>
+            </div>
+            <div class="reader-action-row">
+              <a href="business-transformation.html#sop-implementation" class="reader-cta-btn">
+                <span>See Implementation Approach</span>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tab Panel 05 -->
+          <article class="reader-tab-panel" id="tab-05" role="tabpanel">
+            <h2 class="reader-headline">
+              Intelligent Process Automation: Making workflows smarter, faster & connected
+            </h2>
+            <div class="reader-prose">
+              <p>
+                We identify repetitive, manual, and error-prone activities across procurement, accounting, dispatch, and customer service that can be streamlined through intelligent digital automation.
+              </p>
+              <p>
+                Our automation specialists combine script-based workflows, RPA bots, and digital toolchains to eliminate manual data entry, reduce cycle times, and ensure information moves instantaneously between legacy systems.
+              </p>
+              <p>
+                The outcome is an agile, connected enterprise where skilled professionals spend their time on strategic problem solving rather than administrative data transfer.
+              </p>
+            </div>
+            <div class="reader-action-row">
+              <a href="process-automation.html" class="reader-cta-btn">
+                <span>Explore Process Automation</span>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tab Panel 06 -->
+          <article class="reader-tab-panel" id="tab-06" role="tabpanel">
+            <h2 class="reader-headline">
+              ERP Selection & Integration: Building the unified digital backbone
+            </h2>
+            <div class="reader-prose">
+              <p>
+                We provide objective, vendor-neutral advisory to evaluate ERP solutions based on your operational complexity, industry requirements, scalability, and budget.
+              </p>
+              <p>
+                From product selection and master data governance to workflow customization and post-go-live team enablement, we support the entire transition toward an integrated business system.
+              </p>
+              <p>
+                We also connect inventory optimization and on-time delivery tracking directly into your ERP, ensuring complete end-to-end visibility from purchase order to customer invoice.
+              </p>
+            </div>
+            <div class="reader-action-row">
+              <a href="process-automation.html#erp-implementation" class="reader-cta-btn">
+                <span>Explore ERP Solutions</span>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tab Panel 07 -->
+          <article class="reader-tab-panel" id="tab-07" role="tabpanel">
+            <h2 class="reader-headline">
+              Growth & Strategic Consulting: Turning operational data into margin growth
+            </h2>
+            <div class="reader-prose">
+              <p>
+                We transform raw operational and financial data into decisive business intelligence. Through structured reporting and executive dashboards, we give management total visibility into gross margins, working capital, and product profitability.
+              </p>
+              <p>
+                Our strategists calibrate unit economics, uncover hidden margin leaks, and formulate data-driven marketing and commercial strategies that align with your annual business objectives.
+              </p>
+              <p>
+                Management transitions from making decisions on intuition or trailing reports to steering the firm with high-conviction forward telemetry.
+              </p>
+            </div>
+            <div class="reader-action-row">
+              <a href="growth-strategic-consulting.html" class="reader-cta-btn">
+                <span>Explore Strategic Consulting</span>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PATTERN 2: Editorial Narrative & 3-Column Stats (Warm Off-White Background - Image 2 Reference) -->
+    <section class="pattern-editorial-section" id="editorial-narrative">
+      <div class="pattern-editorial-container">
+        
+        <!-- Top Headline (Matching Image 2) -->
+        <h2 class="editorial-main-headline">
+          Structured systems are no longer a future initiative.
+        </h2>
+
+        <!-- Middle 2-Column Prose Narrative (Matching Image 2) -->
+        <div class="editorial-narrative-grid">
+          <div class="editorial-narrative-col">
+            <p class="narrative-lead">
+              For many organizations, operational friction is already part of how work gets done.
+            </p>
+            <p>
+              More than half of business leaders say structured systems and process rigor are key drivers of competitive advantage, yet undocumented workflows, task bottlenecks, and scattered data continue to drain enterprise productivity. As commercial demands accelerate, executive expectations are rising just as quickly.
+            </p>
+          </div>
+          <div class="editorial-narrative-col">
+            <p>
+              Leaders face growing pressure to demonstrate quantifiable ROI, protect margins against inflation, and scale without executive micro-management. Many worry their operations are not adapting fast enough to keep pace with modern digital scale.
+            </p>
+            <p>
+              The challenge is no longer whether organizations can purchase new tools or hire more people—it's whether they can prepare their workforce, standardize daily habits, and build the repeatable systems needed to realize their full potential.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom 3-Column Statistics Grid (Matching Image 2) -->
+        <div class="editorial-stats-row">
+          <div class="editorial-stat-card">
+            <span class="editorial-stat-number">57%</span>
+            <p class="editorial-stat-desc">
+              of organizations cite workload bottlenecks and role duplication as their single biggest barrier to profitable growth.
+            </p>
+          </div>
+          <div class="editorial-stat-card">
+            <span class="editorial-stat-number">77%</span>
+            <p class="editorial-stat-desc">
+              say practical, documented SOPs and active team coaching are essential to scaling operations without quality variance.
+            </p>
+          </div>
+          <div class="editorial-stat-card">
+            <span class="editorial-stat-number">32%</span>
+            <p class="editorial-stat-desc">
+              have achieved complete operational alignment between executive annual profit targets and everyday front-line delivery.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3 Core Service Deep-Dive Cards -->
+    <section class="service-section services-portal-cards">
+      <div class="section-container">
+        
+        <div class="section-header-center">
+          <span class="section-kicker">Specialized Practice Areas</span>
+          <h2 class="section-heading">Explore Our Dedicated Practice Pillars</h2>
+          <p class="section-subtext">
+            Dive deep into each of our three core disciplines to understand specific capabilities, deliverables, and engagement roadmaps.
+          </p>
+        </div>
+
+        <div class="portal-services-grid">
+          
+          <!-- Pillar 1 Card -->
+          <div class="portal-service-box">
+            <div class="portal-box-top">
+              <span class="portal-tag">Pillar 01</span>
+              <span class="portal-sub">Operations & Systems</span>
+            </div>
+            <h3>Business Transformation</h3>
+            <p class="portal-tagline">Transforming the way your business operates.</p>
+            <p class="portal-desc">
+              We improve processes, strengthen accountability and create structured systems that enable businesses to operate more efficiently and consistently.
+            </p>
+            <ul class="portal-features-list">
+              <li>Workload Assessment & Bottleneck Discovery</li>
+              <li>SOP Preparation & Practical Documentation</li>
+              <li>SOP Implementation & Operational Rigor</li>
+              <li>Annual Business Planning & Resource Allocation</li>
+            </ul>
+            <a href="business-transformation.html" class="portal-explore-btn">
+              <span>View Business Transformation Deep Dive</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg>
+            </a>
+          </div>
+
+          <!-- Pillar 2 Card -->
+          <div class="portal-service-box">
+            <div class="portal-box-top">
+              <span class="portal-tag">Pillar 02</span>
+              <span class="portal-sub">Efficiency & Scale</span>
+            </div>
+            <h3>Process Automation</h3>
+            <p class="portal-tagline">Making business processes smarter, faster and more connected.</p>
+            <p class="portal-desc">
+              We combine process improvement, technology and automation to reduce manual effort, improve visibility and build scalable operations.
+            </p>
+            <ul class="portal-features-list">
+              <li>Process Automation & Repetitive Task Streamlining</li>
+              <li>Automation & Digital Transformation Workflows</li>
+              <li>ERP Product Selection & Implementation</li>
+              <li>Inventory Optimization & Working Capital</li>
+              <li>On-Time Delivery (OTD) Performance Boost</li>
+            </ul>
+            <a href="process-automation.html" class="portal-explore-btn">
+              <span>View Process Automation Deep Dive</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg>
+            </a>
+          </div>
+
+          <!-- Pillar 3 Card -->
+          <div class="portal-service-box">
+            <div class="portal-box-top">
+              <span class="portal-tag">Pillar 03</span>
+              <span class="portal-sub">Strategy & Intelligence</span>
+            </div>
+            <h3>Growth & Strategic Consulting</h3>
+            <p class="portal-tagline">Turning business data into better decisions.</p>
+            <p class="portal-desc">
+              We help management understand performance, identify opportunities and build practical strategies for sustainable business growth.
+            </p>
+            <ul class="portal-features-list">
+              <li>Data Analytics & Executive Business Intelligence</li>
+              <li>Finance Analytics, Margins & Cost Driver Dissection</li>
+              <li>Data-Driven Marketing Strategy & CAC/LTV Scaling</li>
+              <li>Commercial Growth Prioritization & Resource Alignment</li>
+            </ul>
+            <a href="growth-strategic-consulting.html" class="portal-explore-btn">
+              <span>View Growth Consulting Deep Dive</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Connect With Us Section -->
+  <section class="connect-section" id="connect">
+    <div class="connect-container">
+      
+      <div class="connect-content">
+        <h2 class="connect-title">Connect with us</h2>
+        <p class="connect-desc">
+          Do you have a specific operational challenge, interest in streamlining workflows, or want to discuss an annual roadmap? Talk with our senior partners.
+        </p>
+        <button class="btn-connect-talk" onclick="window.openConsultModal()">
+          <span>Let's talk</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 4l4 4-4 4"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="connect-graphic" aria-hidden="true">
+        <svg class="connect-lines-svg" viewBox="0 0 800 360" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="blueLatticeFadeHub" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+              <stop offset="16%" stop-color="#ffffff" stop-opacity="0.9" />
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+            </linearGradient>
+            <mask id="latticeMaskHub">
+              <rect width="800" height="360" fill="url(#blueLatticeFadeHub)" />
+            </mask>
+            <pattern id="blueLatticeHub" width="28" height="360" patternUnits="userSpaceOnUse">
+              <line x1="0" y1="0" x2="0" y2="360" stroke="#0B2360" stroke-width="1.3" />
+              <line x1="0" y1="180" x2="28" y2="0" stroke="#0B2360" stroke-width="1.3" />
+              <line x1="0" y1="180" x2="28" y2="360" stroke="#0B2360" stroke-width="1.3" />
+            </pattern>
+          </defs>
+          <rect width="800" height="360" fill="url(#blueLatticeHub)" mask="url(#latticeMaskHub)" />
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="footer" role="contentinfo">
+    <div class="footer-container">
+      
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo" aria-label="Sidd Business Consulting Homepage">
+          <img src="logo.png" alt="Sidd" class="footer-logo-img">
+          <span class="footer-logo-sub">Business Consulting</span>
+        </a>
+
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.97 0 1.76-.79 1.76-1.76a1.76 1.76 0 1 0-3.52 0c0 .97.79 1.76 1.76 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav-grid">
+        <div class="footer-section">
+          <h3 class="footer-heading">Services</h3>
+          <div class="heading-accent-bar"></div>
+          <div class="footer-subcolumns">
+            <ul class="footer-link-list">
+              <li><a href="services.html" style="font-weight: 600; color: #0B2360;">All Services Overview</a></li>
+              <li><a href="business-transformation.html">Business Transformation</a></li>
+              <li><a href="process-automation.html">Process Automation</a></li>
+              <li><a href="growth-strategic-consulting.html">Growth & Strategic Consulting</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="business-transformation.html#workload-assessment">Workload Assessment</a></li>
+              <li><a href="business-transformation.html#sop-preparation">SOP Preparation</a></li>
+              <li><a href="process-automation.html#erp-implementation">ERP Implementation</a></li>
+              <li><a href="#connect">Consult an Expert</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-heading">About Us</h3>
+          <div class="heading-accent-bar"></div>
+          <div class="footer-subcolumns">
+            <ul class="footer-link-list">
+              <li><a href="index.html#about">About Sidd Business Consulting</a></li>
+              <li><a href="index.html#leadership">Leadership & Board</a></li>
+              <li><a href="index.html#career">Careers at Sidd</a></li>
+              <li><a href="index.html#culture">Culture & Values</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="index.html#news">News & Press Releases</a></li>
+              <li><a href="index.html#investors">Investor Relations</a></li>
+              <li><a href="index.html#case-studies">Client Success Stories</a></li>
+              <li><a href="#connect">Contact Advisory</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy</a>
+          <span class="legal-separator">|</span>
+          <a href="#terms">Terms</a>
+          <span class="legal-separator">|</span>
+          <a href="#security">Security</a>
+          <span class="legal-separator">|</span>
+          <a href="#certifications">Certifications</a>
+          <span class="legal-separator">|</span>
+          <a href="#sitemap">Sitemap</a>
+          <span class="legal-separator">|</span>
+          <a href="#do-not-sell">Do not sell or share my personal information</a>
+          <span class="legal-separator">|</span>
+          <a href="#accessibility">Accessibility</a>
+          <span class="legal-separator">|</span>
+          <a href="#cookies">Cookie Preferences</a>
+        </div>
+
+        <div class="footer-locale">
+          <button class="footer-locale-btn" id="footerLocaleBtn" aria-label="Region selector">
+            <span>US - EN</span>
+            <span class="locale-arrow">▴</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>Copyright © 2026 Sidd Business Consulting Inc. All rights reserved</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Consult Modal -->
+  <div class="modal-overlay" id="consultModal" aria-hidden="true">
+    <div class="modal-card consult-card">
+      <button class="modal-close-btn" id="closeConsultModal" aria-label="Close Modal">✕</button>
+      <div class="consult-header">
+        <span class="badge-accent">Global Advisory</span>
+        <h2>Consult a Sidd Practice Lead</h2>
+        <p>Connect with senior architects across Business Transformation, Process Automation, or Strategic Growth.</p>
+      </div>
+      <form class="consult-form" id="consultForm" onsubmit="event.preventDefault(); window.submitConsult();">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Jane" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Doe" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="businessEmail">Business Email</label>
+          <input type="email" id="businessEmail" placeholder="jane.doe@enterprise.com" required>
+        </div>
+        <div class="form-group">
+          <label for="topic">Primary Service Practice</label>
+          <select id="topic" required>
+            <option value="business-transformation" selected>Business Transformation (Processes, SOPs, Systems)</option>
+            <option value="process-automation">Intelligent Process Automation (RPA, Workflows, ERP)</option>
+            <option value="growth-strategy">Growth & Strategic Consulting (Data, Finance, Marketing)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comments">Message / Project Goals</label>
+          <textarea id="comments" rows="3" placeholder="Tell us about your organization's operational scope or goals..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit-consult">
+          Submit Consultation Request →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Search Modal Overlay -->
+  <div class="modal-overlay" id="searchModal" aria-hidden="true">
+    <div class="modal-card search-card">
+      <div class="search-header">
+        <div class="search-input-wrap">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Search transformation, automation, analytics..." autofocus>
+        </div>
+        <button class="modal-close-btn" id="closeSearchModal" aria-label="Close Search">✕</button>
+      </div>
+      <div class="search-suggestions">
+        <span class="suggestion-label">Popular Searches:</span>
+        <button class="suggestion-tag">Business Transformation</button>
+        <button class="suggestion-tag">SOP Preparation</button>
+        <button class="suggestion-tag">Process Automation</button>
+        <button class="suggestion-tag">Finance Analytics</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toastNotification" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toastMessage">Consultation request sent successfully!</span>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="logo-white.png" alt="Sidd" class="drawer-logo-img">
+      <button class="modal-close-btn" id="closeMobileDrawer">✕</button>
+    </div>
+    <div class="drawer-content">
+      <a href="services.html" class="drawer-link active">All Services</a>
+      <a href="business-transformation.html" class="drawer-link">Business Transformation</a>
+      <a href="process-automation.html" class="drawer-link">Process Automation</a>
+      <a href="growth-strategic-consulting.html" class="drawer-link">Growth & Strategy</a>
+      <a href="#connect" class="drawer-link" onclick="document.getElementById('mobileDrawer').classList.remove('active');">Contact Us</a>
+      <a href="index.html#about" class="drawer-link">About Us</a>
+      <a href="index.html#career" class="drawer-link">Career</a>
+      <hr class="drawer-divider">
+      <button class="btn-consult mobile-consult-btn" onclick="window.openConsultModal()">
+        <span>Consult an expert</span>
+        <span class="btn-arrow-circle">➔</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

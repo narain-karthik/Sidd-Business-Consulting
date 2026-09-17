@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Business Transformation Services - Sidd Business Consulting. Transforming the way your business operates through Workload Assessment, SOP Preparation, SOP Implementation, and Annual Business Planning.">
+  <title>Business Transformation | Sidd Business Consulting</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="service-detail-body">
+
+  <!-- Floating Glassmorphic Header Navigation -->
+  <header class="header-wrapper">
+    <nav class="glass-navbar" aria-label="Main Navigation">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Sidd Business Consulting Homepage">
+        <img src="logo-white.png" alt="Sidd" class="logo-img logo-light">
+        <img src="logo.png" alt="Sidd" class="logo-img logo-dark">
+        <span class="logo-subtext">Business Consulting</span>
+      </a>
+
+      <!-- Main Navigation Menu -->
+      <ul class="nav-links">
+        <li class="nav-item has-dropdown">
+          <a href="services.html" class="nav-link-btn active" aria-expanded="false" aria-haspopup="true">
+            Our Service <span class="chevron-down">▾</span>
+          </a>
+          <div class="mega-dropdown services-dropdown">
+            <div class="dropdown-inner services-grid">
+              
+              <!-- Service 1 (Current Active) -->
+              <a href="business-transformation.html" class="service-card-item current-page">
+                <span class="service-tag">Operations & Systems</span>
+                <h3>Business Transformation</h3>
+                <p class="service-tagline">Transforming the way your business operates.</p>
+                <p class="service-desc">
+                  We improve processes, strengthen accountability and create structured systems that enable businesses to operate more efficiently and consistently.
+                </p>
+                <span class="service-cta">Current Service • Explore Details →</span>
+              </a>
+
+              <!-- Service 2 -->
+              <a href="process-automation.html" class="service-card-item">
+                <span class="service-tag">Efficiency & Scale</span>
+                <h3>Process Automation</h3>
+                <p class="service-tagline">Making business processes smarter, faster and more connected.</p>
+                <p class="service-desc">
+                  We combine process improvement, technology and automation to reduce manual effort, improve visibility and build scalable operations.
+                </p>
+                <span class="service-cta">Explore Automation →</span>
+              </a>
+
+              <!-- Service 3 -->
+              <a href="growth-strategic-consulting.html" class="service-card-item">
+                <span class="service-tag">Data & Intelligence</span>
+                <h3>Growth & Strategic Consulting</h3>
+                <p class="service-tagline">Turning business data into better decisions.</p>
+                <p class="service-desc">
+                  We help management understand performance, identify opportunities and build practical strategies for sustainable business growth.
+                </p>
+                <span class="service-cta">Explore Growth →</span>
+              </a>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#connect" class="nav-link">Contact Us</a>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <button class="nav-link-btn" aria-expanded="false" aria-haspopup="true">
+            About Us <span class="chevron-down">▾</span>
+          </button>
+          <div class="mega-dropdown dropdown-medium">
+            <div class="dropdown-inner">
+              <div class="dropdown-col">
+                <span class="dropdown-heading">Our Company</span>
+                <a href="index.html#about" class="dropdown-item"><strong>About Sidd Business Consulting</strong><small>Leading enterprise strategy & IT transformation provider</small></a>
+                <a href="index.html#leadership" class="dropdown-item"><strong>Leadership Team</strong><small>Meet our global leadership and board</small></a>
+                <a href="index.html#partners" class="dropdown-item"><strong>Global Strategic Alliances</strong><small>Ecosystem of premier hyperscalers & tech leaders</small></a>
+              </div>
+              <div class="dropdown-col">
+                <span class="dropdown-heading">Impact</span>
+                <a href="index.html#esg" class="dropdown-item"><strong>Environmental & Social (ESG)</strong><small>Building a sustainable, inclusive future</small></a>
+                <a href="index.html#culture" class="dropdown-item"><strong>The Sidd Way</strong><small>Our values, code of ethics and purpose</small></a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="index.html#career" class="nav-link">Career</a>
+        </li>
+      </ul>
+
+      <!-- Right Action Items -->
+      <div class="nav-actions">
+        <a href="index.html#investors" class="utility-link">
+          <span>Investors</span>
+          <svg class="icon-external" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3.5 1.5h7v7M10.5 1.5l-8 8"/>
+          </svg>
+        </a>
+
+        <span class="action-separator">|</span>
+
+        <!-- Consult an Expert Button -->
+        <button class="btn-consult" id="consultBtn" onclick="window.openConsultModal()">
+          <span>Consult an expert</span>
+          <span class="btn-arrow-circle">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Slide Arrow Controls (Linking back to Home) -->
+        <div class="arrow-group">
+          <a href="index.html" class="icon-pill-btn arrow-btn" aria-label="Return to Homepage" title="Homepage">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 12l-4-4 4-4"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Search Button -->
+        <button class="icon-pill-btn search-btn" id="searchBtn" aria-label="Open Search" title="Search">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Service Detail Hero Section -->
+  <section class="service-hero">
+    <div class="service-hero-overlay"></div>
+    <div class="service-hero-container">
+      
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="services.html">Our Services</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Business Transformation</span>
+      </nav>
+
+      <div class="service-hero-badge">Service Pillar 01</div>
+      <h1 class="service-hero-title">
+        Business Transformation
+      </h1>
+      <p class="service-hero-tagline">
+        Transforming the way your business operates.
+      </p>
+      <p class="service-hero-summary">
+        We improve processes, strengthen accountability, and create structured systems that enable organizations to operate with greater efficiency, agility, and consistency. From workload analysis to everyday SOP execution and annual planning, we build the operational backbone for sustainable enterprise growth.
+      </p>
+
+      <div class="service-hero-actions">
+        <button class="btn-primary-consult" onclick="window.openConsultModal()">
+          <span>Schedule an Assessment</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+          </svg>
+        </button>
+        <a href="#core-capabilities" class="btn-secondary-anchor">
+          <span>Explore Capabilities</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3.5v9M4 8.5l4 4 4-4"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="service-main-content">
+    
+    <!-- Section 1: Core Capabilities (4 Pillars from Spreadsheet) -->
+    <section class="service-section capabilities-section" id="core-capabilities">
+      <div class="section-container">
+        
+        <div class="section-header-center">
+          <span class="section-kicker">Core Capabilities</span>
+          <h2 class="section-heading">How We Transform Your Operations</h2>
+          <p class="section-subtext">
+            Four interconnected practices designed to turn manual, fragmented workflows into standardized, measurable, and highly accountable business systems.
+          </p>
+        </div>
+
+        <div class="capabilities-grid">
+          
+          <!-- Pillar 1: Workload Assessment -->
+          <article class="capability-card" id="workload-assessment">
+            <div class="capability-card-top">
+              <span class="pillar-number">01</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 11l3 3L22 4"/>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">Workload Assessment</h3>
+            <p class="capability-desc">
+              We analyse workloads, responsibilities, processes and resource utilisation to identify bottlenecks, duplication and capacity gaps. Our assessment helps businesses understand where time and resources are being spent and where productivity can be improved.
+            </p>
+            <ul class="capability-bullets">
+              <li>Bottleneck & capacity constraint discovery</li>
+              <li>Workload duplication and task redundancy analysis</li>
+              <li>Resource utilisation & bandwidth mapping</li>
+              <li>Clear productivity and throughput optimization benchmarks</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 2: SOP Preparation -->
+          <article class="capability-card" id="sop-preparation">
+            <div class="capability-card-top">
+              <span class="pillar-number">02</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">SOP Preparation</h3>
+            <p class="capability-desc">
+              We document critical business processes into clear, practical Standard Operating Procedures (SOPs). Each SOP defines responsibilities, process steps, controls and expected outcomes, creating consistency across teams.
+            </p>
+            <ul class="capability-bullets">
+              <li>End-to-end process mapping & step definition</li>
+              <li>RACI responsibility and ownership matrices</li>
+              <li>Quality gates, control checkpoints & compliance rules</li>
+              <li>Standardized formats for cross-team consistency</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 3: SOP Implementation -->
+          <article class="capability-card" id="sop-implementation">
+            <div class="capability-card-top">
+              <span class="pillar-number">03</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">SOP Implementation</h3>
+            <p class="capability-desc">
+              We help teams move from documented procedures to actual execution. Through structured implementation, role clarity, process training and monitoring, we ensure SOPs become part of everyday operations rather than remaining as documents.
+            </p>
+            <ul class="capability-bullets">
+              <li>Execution-focused change management and rollout</li>
+              <li>Interactive team training & operational coaching</li>
+              <li>Continuous performance audits and adoption metrics</li>
+              <li>Institutionalizing daily habits and operational rigor</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 4: Annual Business Plan -->
+          <article class="capability-card" id="annual-business-plan">
+            <div class="capability-card-top">
+              <span class="pillar-number">04</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="20" x2="12" y2="10"/>
+                  <line x1="18" y1="20" x2="18" y2="4"/>
+                  <line x1="6" y1="20" x2="6" y2="16"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">Annual Business Plan</h3>
+            <p class="capability-desc">
+              We develop structured annual business plans that translate business objectives into measurable targets, action plans and priorities. The plan provides management with a clear roadmap for growth, profitability, operations and resource allocation.
+            </p>
+            <ul class="capability-bullets">
+              <li>Translation of executive vision into quantifiable milestones</li>
+              <li>Prioritized departmental action roadmaps and timelines</li>
+              <li>Resource capacity planning and capital allocation</li>
+              <li>KPI dashboards and executive governance cadences</li>
+            </ul>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 2: Transformation Lifecycle Roadmap -->
+    <section class="service-section lifecycle-section">
+      <div class="section-container">
+        
+        <div class="section-header-left">
+          <span class="section-kicker">Our Transformation Lifecycle</span>
+          <h2 class="section-heading">A Proven, Structured Methodology</h2>
+          <p class="section-subtext">
+            From initial assessment to long-term governance, our systematic approach minimizes organizational friction while delivering fast, sustainable outcomes.
+          </p>
+        </div>
+
+        <div class="lifecycle-timeline">
+          
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Phase 01</span>
+              <h4>Diagnose & Benchmark</h4>
+            </div>
+            <p>
+              Assess current workloads, interview functional leads, pinpoint capacity waste, and quantify existing process baselines across business units.
+            </p>
+          </div>
+
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Phase 02</span>
+              <h4>Design & Document SOPs</h4>
+            </div>
+            <p>
+              Co-create crystal-clear operating procedures, define process owners, establish governance controls, and build frictionless standard operating documentation.
+            </p>
+          </div>
+
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Phase 03</span>
+              <h4>Enable & Embed Execution</h4>
+            </div>
+            <p>
+              Lead team workshops, conduct role clarity sessions, monitor live execution, and embed adherence into daily operational routines.
+            </p>
+          </div>
+
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Phase 04</span>
+              <h4>Align Annual Strategy & Scale</h4>
+            </div>
+            <p>
+              Build the annual strategic operating plan, link daily KPIs to executive profit targets, and institutionalize continuous optimization cadences.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Value Delivered / Business Impact -->
+    <section class="service-section impact-section">
+      <div class="section-container">
+        
+        <div class="impact-inner-banner">
+          <div class="impact-content">
+            <span class="section-kicker kicker-light">Tangible Outcomes</span>
+            <h2 class="impact-title">What Changes When You Transform With Sidd</h2>
+            <p class="impact-desc">
+              Our engagements are structured for measurable, operational impact—not just high-level strategy slides. We build repeatable systems that run without executive micro-management.
+            </p>
+          </div>
+
+          <div class="impact-stats-grid">
+            <div class="stat-box">
+              <span class="stat-number">40%</span>
+              <span class="stat-label">Reduction in operational bottlenecks & cycle time</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Clarity of roles and standardized SOP documentation</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">2.5x</span>
+              <span class="stat-label">Faster employee onboarding and process handover</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">1</span>
+              <span class="stat-label">Unified annual roadmap aligned across all business functions</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Other Services Navigation -->
+    <section class="service-section other-services-section">
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="section-kicker">Explore Complementary Pillars</span>
+          <h2 class="section-heading">Connected Business Services</h2>
+        </div>
+
+        <div class="other-services-grid">
+          
+          <div class="other-service-card">
+            <span class="other-tag">Service Pillar 02</span>
+            <h3>Process Automation</h3>
+            <p>Making business processes smarter, faster and more connected through intelligent workflows, digital tools, and ERP integrations.</p>
+            <a href="index.html#process-automation" class="service-link-btn">Explore Automation →</a>
+          </div>
+
+          <div class="other-service-card">
+            <span class="other-tag">Service Pillar 03</span>
+            <h3>Growth & Strategic Consulting</h3>
+            <p>Turning operational and financial data into actionable decisions for sustainable business expansion, margin control, and marketing strategy.</p>
+            <a href="index.html#growth-strategy" class="service-link-btn">Explore Strategy →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Connect With Us Section (Above Footer) -->
+  <section class="connect-section" id="connect">
+    <div class="connect-container">
+      
+      <!-- Left Content -->
+      <div class="connect-content">
+        <h2 class="connect-title">Connect with us</h2>
+        <p class="connect-desc">
+          Ready to transform your business operations, streamline workflows, or discuss an annual business roadmap? Talk with our senior transformation advisors.
+        </p>
+        <button class="btn-connect-talk" onclick="window.openConsultModal()">
+          <span>Let's talk</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 4l4 4-4 4"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Right Graphic: Geometric Lines Pattern in Sidd Blue -->
+      <div class="connect-graphic" aria-hidden="true">
+        <svg class="connect-lines-svg" viewBox="0 0 800 360" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="blueLatticeFade" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+              <stop offset="16%" stop-color="#ffffff" stop-opacity="0.9" />
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+            </linearGradient>
+            <mask id="latticeMask">
+              <rect width="800" height="360" fill="url(#blueLatticeFade)" />
+            </mask>
+            <pattern id="blueLattice" width="28" height="360" patternUnits="userSpaceOnUse">
+              <line x1="0" y1="0" x2="0" y2="360" stroke="#0B2360" stroke-width="1.3" />
+              <line x1="0" y1="180" x2="28" y2="0" stroke="#0B2360" stroke-width="1.3" />
+              <line x1="0" y1="180" x2="28" y2="360" stroke="#0B2360" stroke-width="1.3" />
+            </pattern>
+          </defs>
+          <rect width="800" height="360" fill="url(#blueLattice)" mask="url(#latticeMask)" />
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sidd Business Consulting Footer -->
+  <footer class="site-footer" id="footer" role="contentinfo">
+    <div class="footer-container">
+      
+      <!-- Top Row: Logo & Social Media -->
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo" aria-label="Sidd Business Consulting Homepage">
+          <img src="logo.png" alt="Sidd" class="footer-logo-img">
+          <span class="footer-logo-sub">Business Consulting</span>
+        </a>
+
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.97 0 1.76-.79 1.76-1.76a1.76 1.76 0 1 0-3.52 0c0 .97.79 1.76 1.76 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Navigation Grid -->
+      <div class="footer-nav-grid">
+        
+        <!-- Column 1: Services (All 3 Pillars) -->
+        <div class="footer-section">
+          <h3 class="footer-heading">Services</h3>
+          <div class="heading-accent-bar"></div>
+          <div class="footer-subcolumns">
+            <ul class="footer-link-list">
+              <li><a href="services.html">All Services Overview</a></li>
+              <li><a href="business-transformation.html" style="font-weight: 600; color: #0B2360;">Business Transformation</a></li>
+              <li><a href="#workload-assessment">Workload Assessment</a></li>
+              <li><a href="#sop-preparation">SOP Preparation</a></li>
+              <li><a href="#sop-implementation">SOP Implementation</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="process-automation.html">Process Automation</a></li>
+              <li><a href="growth-strategic-consulting.html">Growth & Strategic Consulting</a></li>
+              <li><a href="index.html#ai-readiness">Workforce Readiness</a></li>
+              <li><a href="index.html#alliances">Alliances & Technology</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 2: About Us -->
+        <div class="footer-section">
+          <h3 class="footer-heading">About Us</h3>
+          <div class="heading-accent-bar"></div>
+          <div class="footer-subcolumns">
+            <ul class="footer-link-list">
+              <li><a href="index.html#about">About Sidd Business Consulting</a></li>
+              <li><a href="index.html#leadership">Leadership & Board</a></li>
+              <li><a href="index.html#career">Careers at Sidd</a></li>
+              <li><a href="index.html#culture">Culture & Values</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="index.html#news">News & Press Releases</a></li>
+              <li><a href="index.html#investors">Investor Relations</a></li>
+              <li><a href="index.html#case-studies">Client Success Stories</a></li>
+              <li><a href="#connect">Contact Advisory</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Row: Legal Links & Locale -->
+      <div class="footer-bottom-row">
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy</a>
+          <span class="legal-separator">|</span>
+          <a href="#terms">Terms</a>
+          <span class="legal-separator">|</span>
+          <a href="#security">Security</a>
+          <span class="legal-separator">|</span>
+          <a href="#certifications">Certifications</a>
+          <span class="legal-separator">|</span>
+          <a href="#sitemap">Sitemap</a>
+          <span class="legal-separator">|</span>
+          <a href="#do-not-sell">Do not sell or share my personal information</a>
+          <span class="legal-separator">|</span>
+          <a href="#accessibility">Accessibility</a>
+          <span class="legal-separator">|</span>
+          <a href="#cookies">Cookie Preferences</a>
+        </div>
+
+        <div class="footer-locale">
+          <button class="footer-locale-btn" id="footerLocaleBtn" aria-label="Region selector">
+            <span>US - EN</span>
+            <span class="locale-arrow">▴</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Copyright Statement -->
+      <div class="footer-copyright">
+        <p>Copyright © 2026 Sidd Business Consulting Inc. All rights reserved</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Search Modal Overlay -->
+  <div class="modal-overlay" id="searchModal" aria-hidden="true">
+    <div class="modal-card search-card">
+      <div class="search-header">
+        <div class="search-input-wrap">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Search transformation, SOPs, capabilities..." autofocus>
+        </div>
+        <button class="modal-close-btn" id="closeSearchModal" aria-label="Close Search">✕</button>
+      </div>
+      <div class="search-suggestions">
+        <span class="suggestion-label">Popular Searches:</span>
+        <button class="suggestion-tag">Workload Assessment</button>
+        <button class="suggestion-tag">SOP Implementation</button>
+        <button class="suggestion-tag">Annual Business Plan</button>
+        <button class="suggestion-tag">Process Automation</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Consult an Expert Modal -->
+  <div class="modal-overlay" id="consultModal" aria-hidden="true">
+    <div class="modal-card consult-card">
+      <button class="modal-close-btn" id="closeConsultModal" aria-label="Close Modal">✕</button>
+      <div class="consult-header">
+        <span class="badge-accent">Global Advisory</span>
+        <h2>Consult a Sidd Transformation Expert</h2>
+        <p>Connect with senior operational architects to assess bottlenecks, prepare SOPs, or build your annual business roadmap.</p>
+      </div>
+      <form class="consult-form" id="consultForm" onsubmit="event.preventDefault(); window.submitConsult();">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Jane" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Doe" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="businessEmail">Business Email</label>
+          <input type="email" id="businessEmail" placeholder="jane.doe@enterprise.com" required>
+        </div>
+        <div class="form-group">
+          <label for="topic">Area of Interest</label>
+          <select id="topic" required>
+            <option value="workload-assessment" selected>Workload Assessment & Bottleneck Discovery</option>
+            <option value="sop-preparation">SOP Preparation & Documentation</option>
+            <option value="sop-implementation">SOP Implementation & Operational Execution</option>
+            <option value="annual-business-plan">Annual Business Plan & Roadmap</option>
+            <option value="process-automation">Intelligent Process Automation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comments">Message / Scope</label>
+          <textarea id="comments" rows="3" placeholder="Describe your team size, operational challenges, or timeline..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit-consult">
+          Submit Consultation Request →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toastNotification" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toastMessage">Consultation request sent successfully!</span>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="logo-white.png" alt="Sidd" class="drawer-logo-img">
+      <button class="modal-close-btn" id="closeMobileDrawer">✕</button>
+    </div>
+    <div class="drawer-content">
+      <a href="business-transformation.html" class="drawer-link active">Business Transformation</a>
+      <a href="index.html#process-automation" class="drawer-link">Process Automation</a>
+      <a href="index.html#growth-strategy" class="drawer-link">Growth & Strategy</a>
+      <a href="#connect" class="drawer-link" onclick="document.getElementById('mobileDrawer').classList.remove('active');">Contact Us</a>
+      <a href="index.html#about" class="drawer-link">About Us</a>
+      <a href="index.html#career" class="drawer-link">Career</a>
+      <hr class="drawer-divider">
+      <button class="btn-consult mobile-consult-btn" onclick="window.openConsultModal()">
+        <span>Consult an expert</span>
+        <span class="btn-arrow-circle">➔</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

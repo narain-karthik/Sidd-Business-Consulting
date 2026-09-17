@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Growth & Strategic Consulting Services - Sidd Business Consulting. Turning operational and financial business data into better strategic decisions through Data Analytics, Finance Analytics, and Marketing Strategy.">
+  <title>Growth & Strategic Consulting | Sidd Business Consulting</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="service-detail-body">
+
+  <!-- Floating Glassmorphic Header Navigation -->
+  <header class="header-wrapper">
+    <nav class="glass-navbar" aria-label="Main Navigation">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Sidd Business Consulting Homepage">
+        <img src="logo-white.png" alt="Sidd" class="logo-img logo-light">
+        <img src="logo.png" alt="Sidd" class="logo-img logo-dark">
+        <span class="logo-subtext">Business Consulting</span>
+      </a>
+
+      <!-- Main Navigation Menu -->
+      <ul class="nav-links">
+        <li class="nav-item has-dropdown">
+          <a href="services.html" class="nav-link-btn active" aria-expanded="false" aria-haspopup="true">
+            Our Service <span class="chevron-down">▾</span>
+          </a>
+          <div class="mega-dropdown services-dropdown">
+            <div class="dropdown-inner services-grid">
+              
+              <!-- Service 1 -->
+              <a href="business-transformation.html" class="service-card-item">
+                <span class="service-tag">Operations & Systems</span>
+                <h3>Business Transformation</h3>
+                <p class="service-tagline">Transforming the way your business operates.</p>
+                <p class="service-desc">
+                  We improve processes, strengthen accountability and create structured systems that enable businesses to operate more efficiently and consistently.
+                </p>
+                <span class="service-cta">Explore Transformation →</span>
+              </a>
+
+              <!-- Service 2 -->
+              <a href="process-automation.html" class="service-card-item">
+                <span class="service-tag">Efficiency & Scale</span>
+                <h3>Process Automation</h3>
+                <p class="service-tagline">Making business processes smarter, faster and more connected.</p>
+                <p class="service-desc">
+                  We combine process improvement, technology and automation to reduce manual effort, improve visibility and build scalable operations.
+                </p>
+                <span class="service-cta">Explore Automation →</span>
+              </a>
+
+              <!-- Service 3 (Active Current) -->
+              <a href="growth-strategic-consulting.html" class="service-card-item current-page">
+                <span class="service-tag">Data & Intelligence</span>
+                <h3>Growth & Strategic Consulting</h3>
+                <p class="service-tagline">Turning business data into better decisions.</p>
+                <p class="service-desc">
+                  We help management understand performance, identify opportunities and build practical strategies for sustainable business growth.
+                </p>
+                <span class="service-cta">Current Service • Explore Details →</span>
+              </a>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#connect" class="nav-link">Contact Us</a>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <button class="nav-link-btn" aria-expanded="false" aria-haspopup="true">
+            About Us <span class="chevron-down">▾</span>
+          </button>
+          <div class="mega-dropdown dropdown-medium">
+            <div class="dropdown-inner">
+              <div class="dropdown-col">
+                <span class="dropdown-heading">Our Company</span>
+                <a href="index.html#about" class="dropdown-item"><strong>About Sidd Business Consulting</strong><small>Leading enterprise strategy & IT transformation provider</small></a>
+                <a href="index.html#leadership" class="dropdown-item"><strong>Leadership Team</strong><small>Meet our global leadership and board</small></a>
+                <a href="index.html#partners" class="dropdown-item"><strong>Global Strategic Alliances</strong><small>Ecosystem of premier hyperscalers & tech leaders</small></a>
+              </div>
+              <div class="dropdown-col">
+                <span class="dropdown-heading">Impact</span>
+                <a href="index.html#esg" class="dropdown-item"><strong>Environmental & Social (ESG)</strong><small>Building a sustainable, inclusive future</small></a>
+                <a href="index.html#culture" class="dropdown-item"><strong>The Sidd Way</strong><small>Our values, code of ethics and purpose</small></a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="index.html#career" class="nav-link">Career</a>
+        </li>
+      </ul>
+
+      <!-- Right Action Items -->
+      <div class="nav-actions">
+        <a href="index.html#investors" class="utility-link">
+          <span>Investors</span>
+          <svg class="icon-external" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3.5 1.5h7v7M10.5 1.5l-8 8"/>
+          </svg>
+        </a>
+
+        <span class="action-separator">|</span>
+
+        <!-- Consult an Expert Button -->
+        <button class="btn-consult" id="consultBtn" onclick="window.openConsultModal()">
+          <span>Consult an expert</span>
+          <span class="btn-arrow-circle">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Slide Arrow Controls (Linking back to Home) -->
+        <div class="arrow-group">
+          <a href="index.html" class="icon-pill-btn arrow-btn" aria-label="Return to Homepage" title="Homepage">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 12l-4-4 4-4"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Search Button -->
+        <button class="icon-pill-btn search-btn" id="searchBtn" aria-label="Open Search" title="Search">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Service Detail Hero Section -->
+  <section class="service-hero">
+    <div class="service-hero-overlay"></div>
+    <div class="service-hero-container">
+      
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="services.html">Our Services</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Growth & Strategic Consulting</span>
+      </nav>
+
+      <div class="service-hero-badge">Service Pillar 03</div>
+      <h1 class="service-hero-title">
+        Growth & Strategic Consulting
+      </h1>
+      <p class="service-hero-tagline">
+        Turning business data into better decisions.
+      </p>
+      <p class="service-hero-summary">
+        We help executive management understand real performance, identify overlooked commercial opportunities, and build practical strategies for sustainable business expansion. By unlocking deep visibility into operational data, financial margins, and marketing ROI, we enable leadership to steer their organizations with high conviction.
+      </p>
+
+      <div class="service-hero-actions">
+        <button class="btn-primary-consult" onclick="window.openConsultModal()">
+          <span>Request Strategic Consultation</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+          </svg>
+        </button>
+        <a href="#core-capabilities" class="btn-secondary-anchor">
+          <span>Explore 3 Capabilities</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3.5v9M4 8.5l4 4 4-4"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="service-main-content">
+    
+    <!-- Section 1: Core Capabilities (3 Pillars from User Reference & Workbook) -->
+    <section class="service-section capabilities-section" id="core-capabilities">
+      <div class="section-container">
+        
+        <div class="section-header-center">
+          <span class="section-kicker">Core Capabilities</span>
+          <h2 class="section-heading">How We Drive Strategic Growth</h2>
+          <p class="section-subtext">
+            Three analytical practices designed to convert raw organizational telemetry into high-confidence decisions, margin protection, and market leadership.
+          </p>
+        </div>
+
+        <div class="capabilities-grid capabilities-grid-three">
+          
+          <!-- Pillar 1: Data Analytics -->
+          <article class="capability-card">
+            <div class="capability-card-top">
+              <span class="pillar-number">01</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"/>
+                  <line x1="12" y1="20" x2="12" y2="4"/>
+                  <line x1="6" y1="20" x2="6" y2="14"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">Data Analytics</h3>
+            <p class="capability-desc">
+              We transform operational data into meaningful business insights. Through structured analysis and management reporting, we help businesses understand performance, identify trends, monitor KPIs and make decisions based on evidence rather than assumptions.
+            </p>
+            <ul class="capability-bullets">
+              <li>Unified operational data pipelines & business intelligence dashboards</li>
+              <li>Statistical trend discovery and customer cohort behavior analysis</li>
+              <li>Objective KPI framework tracking with real-time alerting</li>
+              <li>Evidence-driven executive decision models replacing guesswork</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 2: Finance Analytics -->
+          <article class="capability-card">
+            <div class="capability-card-top">
+              <span class="pillar-number">02</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="1" x2="12" y2="23"/>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">Finance Analytics</h3>
+            <p class="capability-desc">
+              We analyse financial and operational data to provide deeper visibility into revenue, costs, margins, working capital and profitability. Our insights help management understand the financial drivers of the business and identify areas for improvement.
+            </p>
+            <ul class="capability-bullets">
+              <li>Granular product/service gross margin and EBITDA breakdown</li>
+              <li>Cash flow cycle, working capital & receivables optimization</li>
+              <li>Fixed vs. variable cost structure dissection & leak prevention</li>
+              <li>Financial sensitivity analysis for expansion or M&A scenarios</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 3: Marketing Strategy -->
+          <article class="capability-card">
+            <div class="capability-card-top">
+              <span class="pillar-number">03</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">Marketing Strategy</h3>
+            <p class="capability-desc">
+              We develop data-driven marketing strategies based on the business model, target customers, market position and growth objectives. We help businesses define priorities, evaluate marketing performance and allocate resources towards measurable growth.
+            </p>
+            <ul class="capability-bullets">
+              <li>Customer lifetime value (LTV) and CAC unit economics validation</li>
+              <li>Competitive positioning, value proposition & pricing analysis</li>
+              <li>Marketing attribution modeling across omni-channel funnels</li>
+              <li>High-ROI growth budget allocation and commercial focus</li>
+            </ul>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 2: Strategy Roadmap -->
+    <section class="service-section lifecycle-section">
+      <div class="section-container">
+        
+        <div class="section-header-left">
+          <span class="section-kicker">Strategic Governance Framework</span>
+          <h2 class="section-heading">From Data Insights to Enterprise Growth</h2>
+          <p class="section-subtext">
+            Our structured 4-step cadence aligns executive leadership around objective data truths and executable commercial milestones.
+          </p>
+        </div>
+
+        <div class="lifecycle-timeline">
+          
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Phase 01</span>
+              <h4>Data Audit & Consolidation</h4>
+            </div>
+            <p>
+              Consolidate disconnected financial, marketing, and operational data silos into a single source of verified truth.
+            </p>
+          </div>
+
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Phase 02</span>
+              <h4>Margin & Performance Modeling</h4>
+            </div>
+            <p>
+              Dissect unit economics, uncover hidden profitability leaks, and stress-test revenue drivers under different market conditions.
+            </p>
+          </div>
+
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Phase 03</span>
+              <h4>Commercial Growth Roadmap</h4>
+            </div>
+            <p>
+              Prioritize target market segments, optimize capital allocation, and establish high-accountability marketing KPIs.
+            </p>
+          </div>
+
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Phase 04</span>
+              <h4>Executive Dashboard & Review</h4>
+            </div>
+            <p>
+              Institute monthly executive steering cadences backed by live BI dashboards to ensure strategies adapt dynamically.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Impact Banner -->
+    <section class="service-section impact-section">
+      <div class="section-container">
+        
+        <div class="impact-inner-banner">
+          <div class="impact-content">
+            <span class="section-kicker kicker-light">Tangible Outcomes</span>
+            <h2 class="impact-title">Evidence-Based Leadership & Compounding Margins</h2>
+            <p class="impact-desc">
+              Leaders who replace intuition with systematic data intelligence build more resilient balance sheets and capture market share faster.
+            </p>
+          </div>
+
+          <div class="impact-stats-grid">
+            <div class="stat-box">
+              <span class="stat-number">3.2x</span>
+              <span class="stat-label">Faster executive decision cycle times with live data intelligence</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">18%</span>
+              <span class="stat-label">Average EBITDA margin improvement through cost and leakage analysis</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">45%</span>
+              <span class="stat-label">Higher marketing ROI via calibrated unit economics and channel focus</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Alignment between board financial targets and day-to-day operations</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Other Services Navigation -->
+    <section class="service-section other-services-section">
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="section-kicker">Explore Complementary Pillars</span>
+          <h2 class="section-heading">Connected Business Services</h2>
+        </div>
+
+        <div class="other-services-grid">
+          
+          <div class="other-service-card">
+            <span class="other-tag">Service Pillar 01</span>
+            <h3>Business Transformation</h3>
+            <p>Transforming the way your business operates through Workload Assessment, SOP Preparation, SOP Implementation, and Annual Business Planning.</p>
+            <a href="business-transformation.html" class="service-link-btn">Explore Transformation →</a>
+          </div>
+
+          <div class="other-service-card">
+            <span class="other-tag">Service Pillar 02</span>
+            <h3>Process Automation</h3>
+            <p>Making business processes smarter, faster and more connected through intelligent workflows, digital tools, and ERP integrations.</p>
+            <a href="process-automation.html" class="service-link-btn">Explore Automation →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Connect With Us Section -->
+  <section class="connect-section" id="connect">
+    <div class="connect-container">
+      
+      <div class="connect-content">
+        <h2 class="connect-title">Connect with us</h2>
+        <p class="connect-desc">
+          Looking to turn messy business data into high-margin growth strategies? Discuss your commercial objectives with our senior strategy partners.
+        </p>
+        <button class="btn-connect-talk" onclick="window.openConsultModal()">
+          <span>Let's talk</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 4l4 4-4 4"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="connect-graphic" aria-hidden="true">
+        <svg class="connect-lines-svg" viewBox="0 0 800 360" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="blueLatticeFade3" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+              <stop offset="16%" stop-color="#ffffff" stop-opacity="0.9" />
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+            </linearGradient>
+            <mask id="latticeMask3">
+              <rect width="800" height="360" fill="url(#blueLatticeFade3)" />
+            </mask>
+            <pattern id="blueLattice3" width="28" height="360" patternUnits="userSpaceOnUse">
+              <line x1="0" y1="0" x2="0" y2="360" stroke="#0B2360" stroke-width="1.3" />
+              <line x1="0" y1="180" x2="28" y2="0" stroke="#0B2360" stroke-width="1.3" />
+              <line x1="0" y1="180" x2="28" y2="360" stroke="#0B2360" stroke-width="1.3" />
+            </pattern>
+          </defs>
+          <rect width="800" height="360" fill="url(#blueLattice3)" mask="url(#latticeMask3)" />
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="footer" role="contentinfo">
+    <div class="footer-container">
+      
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo" aria-label="Sidd Business Consulting Homepage">
+          <img src="logo.png" alt="Sidd" class="footer-logo-img">
+          <span class="footer-logo-sub">Business Consulting</span>
+        </a>
+
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.97 0 1.76-.79 1.76-1.76a1.76 1.76 0 1 0-3.52 0c0 .97.79 1.76 1.76 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav-grid">
+        <div class="footer-section">
+          <h3 class="footer-heading">Services</h3>
+          <div class="heading-accent-bar"></div>
+          <div class="footer-subcolumns">
+            <ul class="footer-link-list">
+              <li><a href="services.html">All Services Overview</a></li>
+              <li><a href="business-transformation.html">Business Transformation</a></li>
+              <li><a href="process-automation.html">Process Automation</a></li>
+              <li><a href="growth-strategic-consulting.html" style="font-weight: 600; color: #0B2360;">Growth & Strategic Consulting</a></li>
+              <li><a href="#data-analytics">Data Analytics & BI</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="#marketing-strategy">Marketing Strategy</a></li>
+              <li><a href="index.html#alliances">Alliances & Hyperscalers</a></li>
+              <li><a href="index.html#case-studies">Client Case Studies</a></li>
+              <li><a href="#connect">Contact Advisory</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-heading">About Us</h3>
+          <div class="heading-accent-bar"></div>
+          <div class="footer-subcolumns">
+            <ul class="footer-link-list">
+              <li><a href="index.html#about">About Sidd Business Consulting</a></li>
+              <li><a href="index.html#leadership">Leadership & Board</a></li>
+              <li><a href="index.html#career">Careers at Sidd</a></li>
+              <li><a href="index.html#culture">Culture & Values</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="index.html#news">News & Press Releases</a></li>
+              <li><a href="index.html#investors">Investor Relations</a></li>
+              <li><a href="index.html#case-studies">Client Success Stories</a></li>
+              <li><a href="#connect">Contact Advisory</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy</a>
+          <span class="legal-separator">|</span>
+          <a href="#terms">Terms</a>
+          <span class="legal-separator">|</span>
+          <a href="#security">Security</a>
+          <span class="legal-separator">|</span>
+          <a href="#certifications">Certifications</a>
+          <span class="legal-separator">|</span>
+          <a href="#sitemap">Sitemap</a>
+          <span class="legal-separator">|</span>
+          <a href="#do-not-sell">Do not sell or share my personal information</a>
+          <span class="legal-separator">|</span>
+          <a href="#accessibility">Accessibility</a>
+          <span class="legal-separator">|</span>
+          <a href="#cookies">Cookie Preferences</a>
+        </div>
+
+        <div class="footer-locale">
+          <button class="footer-locale-btn" id="footerLocaleBtn" aria-label="Region selector">
+            <span>US - EN</span>
+            <span class="locale-arrow">▴</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>Copyright © 2026 Sidd Business Consulting Inc. All rights reserved</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Consult Modal -->
+  <div class="modal-overlay" id="consultModal" aria-hidden="true">
+    <div class="modal-card consult-card">
+      <button class="modal-close-btn" id="closeConsultModal" aria-label="Close Modal">✕</button>
+      <div class="consult-header">
+        <span class="badge-accent">Global Advisory</span>
+        <h2>Consult a Sidd Strategic Partner</h2>
+        <p>Connect with senior strategists and data intelligence leads to build an evidence-driven roadmap for margin growth and market expansion.</p>
+      </div>
+      <form class="consult-form" id="consultForm" onsubmit="event.preventDefault(); window.submitConsult();">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Jane" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Doe" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="businessEmail">Business Email</label>
+          <input type="email" id="businessEmail" placeholder="jane.doe@enterprise.com" required>
+        </div>
+        <div class="form-group">
+          <label for="topic">Area of Interest</label>
+          <select id="topic" required>
+            <option value="data-analytics" selected>Data Analytics & Business Intelligence</option>
+            <option value="finance-analytics">Finance Analytics & Margin Optimization</option>
+            <option value="marketing-strategy">Data-Driven Marketing Strategy</option>
+            <option value="growth-roadmap">Enterprise Annual Growth Planning</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comments">Message / Objectives</label>
+          <textarea id="comments" rows="3" placeholder="Tell us about your organization's growth goals, margin challenges, or scope..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit-consult">
+          Submit Consultation Request →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Search Modal Overlay -->
+  <div class="modal-overlay" id="searchModal" aria-hidden="true">
+    <div class="modal-card search-card">
+      <div class="search-header">
+        <div class="search-input-wrap">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Search analytics, finance, marketing strategy..." autofocus>
+        </div>
+        <button class="modal-close-btn" id="closeSearchModal" aria-label="Close Search">✕</button>
+      </div>
+      <div class="search-suggestions">
+        <span class="suggestion-label">Popular Searches:</span>
+        <button class="suggestion-tag">Data Analytics</button>
+        <button class="suggestion-tag">Finance Analytics</button>
+        <button class="suggestion-tag">Marketing Strategy</button>
+        <button class="suggestion-tag">EBITDA Optimization</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toastNotification" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toastMessage">Consultation request sent successfully!</span>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="logo-white.png" alt="Sidd" class="drawer-logo-img">
+      <button class="modal-close-btn" id="closeMobileDrawer">✕</button>
+    </div>
+    <div class="drawer-content">
+      <a href="business-transformation.html" class="drawer-link">Business Transformation</a>
+      <a href="process-automation.html" class="drawer-link">Process Automation</a>
+      <a href="growth-strategic-consulting.html" class="drawer-link active">Growth & Strategy</a>
+      <a href="#connect" class="drawer-link" onclick="document.getElementById('mobileDrawer').classList.remove('active');">Contact Us</a>
+      <a href="index.html#about" class="drawer-link">About Us</a>
+      <a href="index.html#career" class="drawer-link">Career</a>
+      <hr class="drawer-divider">
+      <button class="btn-consult mobile-consult-btn" onclick="window.openConsultModal()">
+        <span>Consult an expert</span>
+        <span class="btn-arrow-circle">➔</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

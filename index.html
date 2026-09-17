@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sidd Business Consulting - Is your workforce ready for AI? Explore the People Readiness Report on workforce readiness and AI success.">
+  <title>Sidd Business Consulting - Is your workforce ready for AI? | People Readiness Report</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Video & Overlay -->
+  <div class="video-container" aria-hidden="true">
+    <video id="heroVideo" class="bg-video active" data-slide-video="0" autoplay loop muted playsinline preload="auto">
+      <source src="prr-animated-main-image-16x9-0x720-3000k.mp4" type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+    <video id="slide2Video" class="bg-video" data-slide-video="1" autoplay loop muted playsinline preload="auto">
+      <source src="slide-2.mp4" type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <!-- Floating Glassmorphic Header Navigation -->
+  <header class="header-wrapper">
+    <nav class="glass-navbar" aria-label="Main Navigation">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" aria-label="Sidd Business Consulting Homepage">
+        <img src="logo-white.png" alt="Sidd" class="logo-img logo-light">
+        <img src="logo.png" alt="Sidd" class="logo-img logo-dark">
+        <span class="logo-subtext">Business Consulting</span>
+      </a>
+
+      <!-- Main Navigation Menu -->
+      <ul class="nav-links">
+        <li class="nav-item has-dropdown">
+          <a href="services.html" class="nav-link-btn" aria-expanded="false" aria-haspopup="true">
+            Our Service <span class="chevron-down">▾</span>
+          </a>
+          <div class="mega-dropdown services-dropdown">
+            <div class="dropdown-inner services-grid">
+              
+              <!-- Service 1 -->
+              <a href="business-transformation.html" class="service-card-item">
+                <span class="service-tag">Operations & Systems</span>
+                <h3>Business Transformation</h3>
+                <p class="service-tagline">Transforming the way your business operates.</p>
+                <p class="service-desc">
+                  We improve processes, strengthen accountability and create structured systems that enable businesses to operate more efficiently and consistently.
+                </p>
+                <span class="service-cta">Explore Transformation →</span>
+              </a>
+
+              <!-- Service 2 -->
+              <a href="process-automation.html" class="service-card-item">
+                <span class="service-tag">Efficiency & Scale</span>
+                <h3>Process Automation</h3>
+                <p class="service-tagline">Making business processes smarter, faster and more connected.</p>
+                <p class="service-desc">
+                  We combine process improvement, technology and automation to reduce manual effort, improve visibility and build scalable operations.
+                </p>
+                <span class="service-cta">Explore Automation →</span>
+              </a>
+
+              <!-- Service 3 -->
+              <a href="growth-strategic-consulting.html" class="service-card-item">
+                <span class="service-tag">Strategy & Intelligence</span>
+                <h3>Growth & Strategic Consulting</h3>
+                <p class="service-tagline">Turning business data into better decisions.</p>
+                <p class="service-desc">
+                  We help management understand performance, identify opportunities and build practical strategies for sustainable business growth.
+                </p>
+                <span class="service-cta">Explore Consulting →</span>
+              </a>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#connect" class="nav-link">Contact Us</a>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <button class="nav-link-btn" aria-expanded="false" aria-haspopup="true">
+            About Us <span class="chevron-down">▾</span>
+          </button>
+          <div class="mega-dropdown dropdown-medium">
+            <div class="dropdown-inner">
+              <div class="dropdown-col">
+                <span class="dropdown-heading">Our Company</span>
+                <a href="#about" class="dropdown-item"><strong>About Sidd Business Consulting</strong><small>Leading enterprise strategy & IT transformation provider</small></a>
+                <a href="#leadership" class="dropdown-item"><strong>Leadership Team</strong><small>Meet our global leadership and board</small></a>
+                <a href="#partners" class="dropdown-item"><strong>Global Strategic Alliances</strong><small>Ecosystem of premier hyperscalers & tech leaders</small></a>
+              </div>
+              <div class="dropdown-col">
+                <span class="dropdown-heading">Impact</span>
+                <a href="#esg" class="dropdown-item"><strong>Environmental & Social (ESG)</strong><small>Building a sustainable, inclusive future</small></a>
+                <a href="#culture" class="dropdown-item"><strong>The Sidd Way</strong><small>Our values, code of ethics and purpose</small></a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#career" class="nav-link">Career</a>
+        </li>
+      </ul>
+
+      <!-- Right Actions & Controls -->
+      <div class="nav-actions">
+        
+        <a href="#investors" class="utility-link">
+          <span>Investors</span>
+          <svg class="icon-external" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5"/>
+          </svg>
+        </a>
+
+        <span class="action-separator">|</span>
+
+        <!-- Country / Language -->
+        <div class="lang-selector has-dropdown">
+          <button class="lang-btn" id="langBtn" aria-label="Select Region and Language">
+            US - EN <span class="chevron-down">▾</span>
+          </button>
+          <div class="mini-dropdown lang-dropdown">
+            <a href="#" class="lang-option active">United States (English)</a>
+            <a href="#" class="lang-option">United Kingdom (English)</a>
+            <a href="#" class="lang-option">Deutschland (Deutsch)</a>
+            <a href="#" class="lang-option">France (Français)</a>
+            <a href="#" class="lang-option">日本 (日本語)</a>
+            <a href="#" class="lang-option">India (English)</a>
+          </div>
+        </div>
+
+        <!-- Consult an Expert CTA -->
+        <button class="btn-consult" id="consultExpertBtn">
+          <span>Consult an expert</span>
+          <span class="btn-arrow-circle">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Saved Articles / Bookmark Pill -->
+        <button class="icon-pill-btn bookmark-btn" id="bookmarkBtn" aria-label="Saved Items" title="Saved Items">
+          <svg class="icon-bookmark" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M4 2.5h8a1.5 1.5 0 0 1 1.5 1.5v10l-5.5-3.5-5.5 3.5v-10A1.5 1.5 0 0 1 4 2.5z"/>
+          </svg>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+
+        <!-- Slide Arrow Controls -->
+        <div class="arrow-group">
+          <button class="icon-pill-btn arrow-btn" id="prevSlideBtn" aria-label="Previous Slide" title="Previous Slide">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 12l-4-4 4-4"/>
+            </svg>
+          </button>
+          <button class="icon-pill-btn arrow-btn" id="nextSlideBtn" aria-label="Next Slide" title="Next Slide">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 4l4 4-4 4"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Search Button -->
+        <button class="icon-pill-btn search-btn" id="searchBtn" aria-label="Open Search" title="Search">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Hero Section -->
+  <main class="hero-section">
+    <div class="hero-content">
+      
+      <!-- Slide Track with 4 rich slides -->
+      <div class="slide-container" id="slideTrack">
+        
+        <!-- Slide 1 (Matching Image) -->
+        <div class="hero-slide active" data-index="0">
+          <h1 class="hero-title">
+            Is your workforce<br>ready for AI?
+          </h1>
+          <p class="hero-description">
+            Sidd Business Consulting's People Readiness Report explores why workforce readiness has become one of the most important factors determining AI success.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#report" class="btn-hero-primary" id="primaryCtaBtn">
+              Explore the 2026 report
+            </a>
+            <button class="btn-hero-bookmark" id="saveSlideBtn" title="Save this report to your reading list">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 2.5h8a1.5 1.5 0 0 1 1.5 1.5v10l-5.5-3.5-5.5 3.5v-10A1.5 1.5 0 0 1 4 2.5z"/>
+              </svg>
+              <span>Save report</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hero-slide" data-index="1">
+          <h1 class="hero-title">
+            Modern infrastructure<br>built for agentic scale
+          </h1>
+          <p class="hero-description">
+            Unleash enterprise AI capabilities with high-performance hybrid cloud, modern mainframe integration, and autonomous operations.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#infrastructure" class="btn-hero-primary">
+              Discover Cloud Modernization
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide" data-index="2">
+          <h1 class="hero-title">
+            Cyber resilience in an<br>era of continuous threats
+          </h1>
+          <p class="hero-description">
+            Protect mission-critical data and ensure rapid business recovery with zero-trust architectures designed for complex multi-cloud ecosystems.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#security" class="btn-hero-primary">
+              View Cyber Resilience Guide
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="hero-slide" data-index="3">
+          <h1 class="hero-title">
+            Orchestrating IT with<br>Sidd Platform
+          </h1>
+          <p class="hero-description">
+            Harness real-time telemetry, predictive AIOps, and intelligent automation to prevent outages and optimize mission-critical operations.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#bridge" class="btn-hero-primary">
+              Experience Sidd Platform
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Video Play/Pause & Sound Indicator Floating Widget -->
+    <div class="video-media-controls">
+      <button class="media-ctrl-btn" id="playPauseVideoBtn" aria-label="Pause Background Video" title="Pause Background Video">
+        <svg id="pauseIcon" viewBox="0 0 16 16" fill="currentColor">
+          <rect x="4" y="3" width="3" height="10" rx="1"/>
+          <rect x="9" y="3" width="3" height="10" rx="1"/>
+        </svg>
+        <svg id="playIcon" viewBox="0 0 16 16" fill="currentColor" style="display: none;">
+          <path d="M4.5 3.5v9l8-4.5-8-4.5z"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Bottom Carousel Indicators (Matching Image) -->
+    <div class="carousel-indicators" role="tablist" aria-label="Slide Selection">
+      <button class="indicator-dot active" role="tab" aria-selected="true" aria-label="Slide 1" data-slide="0"></button>
+      <button class="indicator-dot" role="tab" aria-selected="false" aria-label="Slide 2" data-slide="1"></button>
+      <button class="indicator-dot" role="tab" aria-selected="false" aria-label="Slide 3" data-slide="2"></button>
+      <button class="indicator-dot" role="tab" aria-selected="false" aria-label="Slide 4" data-slide="3"></button>
+    </div>
+
+  </main>
+
+  <!-- Answers to Questions Section (Above Connect Banner) -->
+  <section class="faq-section" id="faq">
+    <div class="faq-container">
+      
+      <!-- Left Column: Category Navigation with Expandable Arrow -->
+      <div class="faq-sidebar">
+        <div class="faq-heading-block">
+          <h2 class="faq-main-title">Answers to questions about</h2>
+          <button class="faq-brand-trigger" id="faqBrandDropdownBtn" aria-expanded="false" aria-controls="faqCategoryList" title="Click arrow to expand categories">
+            <span class="faq-brand-text" id="faqCurrentCategoryTitle">Sidd Business Consulting</span>
+            <span class="faq-brand-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <ul class="faq-category-nav" id="faqCategoryList" role="tablist" aria-label="FAQ Categories">
+          <li>
+            <button class="faq-cat-btn active" role="tab" aria-selected="true" data-category="consulting">
+              Sidd consulting
+            </button>
+          </li>
+          <li>
+            <button class="faq-cat-btn" role="tab" aria-selected="false" data-category="platform">
+              Our platform
+            </button>
+          </li>
+          <li>
+            <button class="faq-cat-btn" role="tab" aria-selected="false" data-category="alliances">
+              Alliances and partners
+            </button>
+          </li>
+          <li>
+            <button class="faq-cat-btn" role="tab" aria-selected="false" data-category="investing">
+              Investing in Sidd
+            </button>
+          </li>
+          <li>
+            <button class="faq-cat-btn" role="tab" aria-selected="false" data-category="culture">
+              Sidd culture
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Column: Accordion Questions & Answers -->
+      <div class="faq-content">
+        
+        <!-- Category: Sidd consulting (Default Active) -->
+        <div class="faq-group active" data-group="consulting">
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Does Sidd Business Consulting provide consulting services?</span>
+              <span class="faq-icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M4 6l4 4 4-4"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. Sidd Business Consulting provides comprehensive advisory and implementation services across Business Transformation, Process Automation, and Growth & Strategic Consulting. We partner with organizations to redesign operating models, automate complex workflows, and unlock sustainable business growth.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Why choose Sidd Business Consulting for consulting services?</span>
+              <span class="faq-icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M4 6l4 4 4-4"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Our consultants combine deep operational expertise with actionable technology and automation solutions. Unlike traditional firms that only offer high-level decks, we implement structured systems, improve accountability, and directly execute process improvements to deliver measurable ROI.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How would my business benefit from an engagement with Sidd Consult?</span>
+              <span class="faq-icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M4 6l4 4 4-4"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Clients typically achieve significant manual effort reduction, enhanced operational transparency, faster cycle times, and structured systems that enable their businesses to scale predictably. We help management convert raw business data into sharp, high-conviction strategic decisions.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is Sidd Business Consulting looking for new consultants to join the team?</span>
+              <span class="faq-icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M4 6l4 4 4-4"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, we are actively expanding our global consulting, data intelligence, and automation teams. We welcome experienced strategists, business analysts, and digital operations leaders who are passionate about driving impactful client transformations. Check our Career page for open roles.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Category: Our platform -->
+        <div class="faq-group" data-group="platform">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What is the Sidd Consulting Platform?</span>
+              <span class="faq-icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6l4 4 4-4"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>Our proprietary platform integrates real-time telemetry, automated operational workflows, and analytics to give management total visibility across organizational performance.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How does process automation integrate with existing enterprise tools?</span>
+              <span class="faq-icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6l4 4 4-4"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>We build seamless integrations with your existing ERPs, CRMs, data warehouses, and productivity suites, ensuring zero disruption to everyday business operations.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Alliances and partners -->
+        <div class="faq-group" data-group="alliances">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Who are Sidd Business Consulting's strategic partners?</span>
+              <span class="faq-icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6l4 4 4-4"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>We maintain premier alliances with leading cloud hyperscalers, enterprise software vendors, and automation leaders to deliver cutting-edge solutions for our clients.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Investing in Sidd -->
+        <div class="faq-group" data-group="investing">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Where can I find financial and corporate governance information?</span>
+              <span class="faq-icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6l4 4 4-4"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>Investors and stakeholders can explore our financial releases, corporate disclosures, and strategic growth updates through our dedicated Investors portal.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Sidd culture -->
+        <div class="faq-group" data-group="culture">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What defines The Sidd Way and our firm's culture?</span>
+              <span class="faq-icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6l4 4 4-4"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>Our culture is founded on intellectual honesty, radical client accountability, continuous learning, and fostering an inclusive environment where innovation flourishes.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Connect With Us Section (Above Footer) -->
+  <section class="connect-section" id="connect">
+    <div class="connect-container">
+      
+      <!-- Left Content -->
+      <div class="connect-content">
+        <h2 class="connect-title">Connect with us</h2>
+        <p class="connect-desc">
+          Do you have a specific business challenge, interest in a career at Sidd Business Consulting, or just want to get in touch?
+        </p>
+        <button class="btn-connect-talk" onclick="window.openConsultModal()">
+          <span>Let's talk</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 4l4 4-4 4"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Right Graphic: Geometric Lines Pattern in Sidd Blue -->
+      <div class="connect-graphic" aria-hidden="true">
+        <svg class="connect-lines-svg" viewBox="0 0 800 360" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="blueLatticeFade" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+              <stop offset="16%" stop-color="#ffffff" stop-opacity="0.9" />
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+            </linearGradient>
+            <mask id="latticeMask">
+              <rect width="800" height="360" fill="url(#blueLatticeFade)" />
+            </mask>
+            <pattern id="blueLattice" width="28" height="360" patternUnits="userSpaceOnUse">
+              <line x1="0" y1="0" x2="0" y2="360" stroke="#0B2360" stroke-width="1.3" />
+              <line x1="0" y1="180" x2="28" y2="0" stroke="#0B2360" stroke-width="1.3" />
+              <line x1="0" y1="180" x2="28" y2="360" stroke="#0B2360" stroke-width="1.3" />
+            </pattern>
+          </defs>
+          <rect width="800" height="360" fill="url(#blueLattice)" mask="url(#latticeMask)" />
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sidd Business Consulting Site Footer (Matching Design) -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="footer-container">
+      
+      <!-- Top Row: Brand Logo & Social Icons -->
+      <div class="footer-top">
+        <a href="#" class="footer-logo" aria-label="Sidd Business Consulting Homepage">
+          <img src="logo.png" alt="Sidd" class="footer-logo-img">
+          <span class="footer-logo-sub">Business Consulting</span>
+        </a>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/>
+            </svg>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X" title="X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Navigation Columns: Services & About us -->
+      <div class="footer-nav-grid">
+        
+        <!-- Services Column -->
+        <div class="footer-section">
+          <h3 class="footer-heading">Services</h3>
+          <div class="heading-accent-bar"></div>
+          <div class="footer-subcolumns">
+            <ul class="footer-link-list">
+              <li><a href="services.html" style="font-weight: 600; color: #0B2360;">All Services Overview</a></li>
+              <li><a href="business-transformation.html">Business Transformation</a></li>
+              <li><a href="process-automation.html">Process Automation</a></li>
+              <li><a href="growth-strategic-consulting.html">Growth & Strategic Consulting</a></li>
+              <li><a href="#process-improvement">Process Improvement</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="#technology-automation">Technology & Automation</a></li>
+              <li><a href="#scalable-operations">Scalable Operations</a></li>
+              <li><a href="#performance-analytics">Performance & Data Intelligence</a></li>
+              <li><a href="#opportunity-identification">Opportunity Identification</a></li>
+              <li><a href="#strategic-advisory">Strategic Management Advisory</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- About Us Column -->
+        <div class="footer-section">
+          <h3 class="footer-heading">About us</h3>
+          <div class="heading-accent-bar"></div>
+          <div class="footer-subcolumns">
+            <ul class="footer-link-list">
+              <li><a href="#alliances">Alliances</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#contact">Contact us</a></li>
+              <li><a href="#citizenship">Corporate citizenship</a></li>
+              <li><a href="#kinship">Kinship at Sidd</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="#leadership">Leadership</a></li>
+              <li><a href="#locations">Locations</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#trust">Trust</a></li>
+              <li><a href="#values">Our values</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Row: Legal Links & Locale -->
+      <div class="footer-bottom-row">
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy</a>
+          <span class="legal-separator">|</span>
+          <a href="#terms">Terms</a>
+          <span class="legal-separator">|</span>
+          <a href="#security">Security</a>
+          <span class="legal-separator">|</span>
+          <a href="#certifications">Certifications</a>
+          <span class="legal-separator">|</span>
+          <a href="#sitemap">Sitemap</a>
+          <span class="legal-separator">|</span>
+          <a href="#do-not-sell">Do not sell or share my personal information</a>
+          <span class="legal-separator">|</span>
+          <a href="#accessibility">Accessibility</a>
+          <span class="legal-separator">|</span>
+          <a href="#cookies">Cookie Preferences</a>
+        </div>
+
+        <div class="footer-locale">
+          <button class="footer-locale-btn" id="footerLocaleBtn" aria-label="Region selector">
+            <span>US - EN</span>
+            <span class="locale-arrow">▴</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Copyright Statement -->
+      <div class="footer-copyright">
+        <p>Copyright © 2026 Sidd Business Consulting Inc. All rights reserved</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Search Modal Overlay -->
+  <div class="modal-overlay" id="searchModal" aria-hidden="true">
+    <div class="modal-card search-card">
+      <div class="search-header">
+        <div class="search-input-wrap">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Search insights, reports, solutions, services..." autofocus>
+        </div>
+        <button class="modal-close-btn" id="closeSearchModal" aria-label="Close Search">✕</button>
+      </div>
+      <div class="search-suggestions">
+        <span class="suggestion-label">Popular Searches:</span>
+        <button class="suggestion-tag">People Readiness Report</button>
+        <button class="suggestion-tag">Sidd Bridge</button>
+        <button class="suggestion-tag">AI Orchestration</button>
+        <button class="suggestion-tag">Cloud Migration</button>
+        <button class="suggestion-tag">Cyber Resilience</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Consult an Expert Modal -->
+  <div class="modal-overlay" id="consultModal" aria-hidden="true">
+    <div class="modal-card consult-card">
+      <button class="modal-close-btn" id="closeConsultModal" aria-label="Close Modal">✕</button>
+      <div class="consult-header">
+        <span class="badge-accent">Global Advisory</span>
+        <h2>Consult a Sidd Business Consulting Expert</h2>
+        <p>Connect with enterprise business architects, AI practitioners, and cloud specialists to accelerate your modernization journey.</p>
+      </div>
+      <form class="consult-form" id="consultForm" onsubmit="event.preventDefault(); window.submitConsult();">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Jane" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Doe" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="businessEmail">Business Email</label>
+          <input type="email" id="businessEmail" placeholder="jane.doe@enterprise.com" required>
+        </div>
+        <div class="form-group">
+          <label for="topic">Topic of Discussion</label>
+          <select id="topic" required>
+            <option value="business-transformation">Business Transformation (Process & Systems)</option>
+            <option value="process-automation">Process Automation (Smart & Scalable Operations)</option>
+            <option value="growth-strategy">Growth & Strategic Consulting (Data-Driven Decisions)</option>
+            <option value="ai-readiness">Workforce Readiness & Enterprise AI</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comments">Message / Project Scope</label>
+          <textarea id="comments" rows="3" placeholder="Tell us about your organization's goals or timeline..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit-consult">
+          Submit Consultation Request →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toastNotification" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toastMessage">Report saved to your reading list!</span>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="logo-white.png" alt="Sidd" class="drawer-logo-img">
+      <button class="modal-close-btn" id="closeMobileDrawer">✕</button>
+    </div>
+    <div class="drawer-content">
+      <a href="services.html" class="drawer-link">Our Service</a>
+      <a href="#connect" class="drawer-link" onclick="document.getElementById('mobileDrawer').classList.remove('active');">Contact Us</a>
+      <a href="#about-us" class="drawer-link">About Us</a>
+      <a href="#career" class="drawer-link">Career</a>
+      <a href="#investors" class="drawer-link">Investors ↗</a>
+      <hr class="drawer-divider">
+      <button class="btn-consult mobile-consult-btn" onclick="window.openConsultModal()">
+        <span>Consult an expert</span>
+        <span class="btn-arrow-circle">➔</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
