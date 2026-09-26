@@ -3025,5 +3025,1096 @@ a {
   }
 }
 
+/* ==========================================================================
+   Career & Internship Page Styles (career.html)
+   ========================================================================== */
+.career-hero {
+  background: linear-gradient(135deg, #031238 0%, #0B2360 60%, #081B4E 100%);
+  position: relative;
+}
+
+.career-perks-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.career-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.pill-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #1cd66c;
+  display: inline-block;
+  box-shadow: 0 0 8px #1cd66c;
+}
+
+/* Career Values Grid */
+.career-values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  margin-top: 16px;
+}
+
+.career-value-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s var(--ease-spring);
+}
+
+.career-value-card:hover {
+  transform: translateY(-4px);
+  border-color: #0B2360;
+  box-shadow: 0 14px 34px rgba(11, 35, 96, 0.08);
+}
+
+.value-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(11, 35, 96, 0.06);
+  color: #0B2360;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  transition: all 0.2s ease;
+}
+
+.career-value-card:hover .value-card-icon {
+  background: #0B2360;
+  color: #ffffff;
+}
+
+.value-card-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.career-value-card h3 {
+  font-size: 19px;
+  font-weight: 600;
+  color: #141414;
+  letter-spacing: -0.015em;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.career-value-card p {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #555555;
+  margin: 0;
+}
+
+/* Career Roles Grid */
+.career-roles-section {
+  background-color: #F8F9FC;
+}
+
+.career-roles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+}
+
+.career-role-box {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+  padding: 44px 38px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.25s var(--ease-spring);
+}
+
+.career-role-box:hover {
+  transform: translateY(-4px);
+  border-color: #0B2360;
+  box-shadow: 0 18px 45px rgba(11, 35, 96, 0.09);
+}
+
+.role-box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.role-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.role-badge-track {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0B2360;
+  background: rgba(11, 35, 96, 0.08);
+  padding: 4px 12px;
+  border-radius: 6px;
+  letter-spacing: 0.05em;
+}
+
+.track-strategy {
+  color: #0B2360;
+  background: rgba(11, 35, 96, 0.08);
+}
+
+.role-badge-stipend {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0B2360;
+  background: #EBF3FF;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.role-ppo-tag {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0d8a42;
+  background: rgba(28, 214, 108, 0.14);
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.role-title {
+  font-size: clamp(1.6rem, 2.4vw, 2.05rem);
+  font-weight: 600;
+  color: #141414;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  line-height: 1.25;
+}
+
+.role-tagline {
+  font-size: 15.5px;
+  color: #0B2360;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.role-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  background: #FAFBFD;
+  border: 1px solid #ECEEF3;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 26px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.meta-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #777777;
+  letter-spacing: 0.04em;
+}
+
+.meta-val {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.role-section-block {
+  margin-bottom: 24px;
+}
+
+.role-section-block h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #161616;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.role-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.role-bullet-list li {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #4b4b4b;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.role-bullet-list li::before {
+  content: "•";
+  color: #0B2360;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  margin-top: 1px;
+}
+
+.role-action-row {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #EEEEEE;
+}
+
+.btn-role-apply {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  background: #0B2360;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 13px 24px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-spring);
+}
+
+.btn-role-apply:hover {
+  background: #14358a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(11, 35, 96, 0.28);
+}
+
+.btn-role-apply svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s ease;
+}
+
+.btn-role-apply:hover svg {
+  transform: translateX(4px);
+}
+
+/* Career Application Form Section */
+.career-form-section {
+  background-color: #ffffff;
+}
+
+.career-form-container {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 68px;
+  align-items: flex-start;
+}
+
+.form-intro-desc {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: #4b4b4b;
+  margin-bottom: 32px;
+}
+
+.form-perks-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 36px;
+}
+
+.perk-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.perk-check-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(11, 35, 96, 0.08);
+  color: #0B2360;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.perk-check-item strong {
+  font-size: 15px;
+  font-weight: 600;
+  color: #161616;
+  display: block;
+}
+
+.perk-check-item p {
+  font-size: 13.5px;
+  color: #666666;
+  margin: 2px 0 0 0;
+  line-height: 1.45;
+}
+
+.admin-notice-box {
+  background: #FAFBFD;
+  border-left: 3px solid #0B2360;
+  padding: 18px 20px;
+  border-radius: 0 10px 10px 0;
+}
+
+.admin-badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0B2360;
+  letter-spacing: 0.06em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.admin-notice-box p {
+  font-size: 13px;
+  color: #555555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Application Form Card */
+.application-form-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+  padding: 42px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.04);
+}
+
+.card-header {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.card-header h3 {
+  font-size: 23px;
+  font-weight: 600;
+  color: #141414;
+  letter-spacing: -0.015em;
+  margin-bottom: 6px;
+}
+
+.card-header p {
+  font-size: 13.5px;
+  color: #777777;
+  margin: 0;
+}
+
+.required-star {
+  color: #e53935;
+  font-weight: 700;
+}
+
+.career-application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.career-application-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.career-application-form label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
+.career-application-form input[type="text"],
+.career-application-form input[type="email"],
+.career-application-form input[type="tel"],
+.career-application-form select {
+  font-family: inherit;
+  font-size: 14.5px;
+  color: #1a1a1a;
+  padding: 12px 16px;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+.career-application-form input:focus,
+.career-application-form select:focus {
+  outline: none;
+  border-color: #0B2360;
+  box-shadow: 0 0 0 3px rgba(11, 35, 96, 0.12);
+}
+
+/* Drag & Drop File Zone */
+.file-drop-zone {
+  border: 2px dashed #B8C2D8;
+  border-radius: 12px;
+  background: #FAFBFD;
+  padding: 26px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.file-drop-zone:hover,
+.file-drop-zone.dragover {
+  border-color: #0B2360;
+  background: #F1F4FA;
+}
+
+.drop-zone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.upload-icon {
+  width: 32px;
+  height: 32px;
+  color: #0B2360;
+  margin-bottom: 2px;
+}
+
+.drop-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #161616;
+}
+
+.drop-subtext {
+  font-size: 12px;
+  color: #777777;
+}
+
+.file-status-indicator {
+  font-size: 13px;
+  font-weight: 500;
+  color: #0B2360;
+  margin-top: 4px;
+  padding: 0 4px;
+}
+
+.btn-submit-application {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--kyndryl-green);
+  color: var(--kyndryl-green-text);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 32px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(28, 214, 108, 0.4);
+  transition: all 0.25s var(--ease-spring);
+  margin-top: 8px;
+}
+
+.btn-submit-application:hover {
+  background-color: #38e684;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(28, 214, 108, 0.55);
+}
+
+.btn-submit-application svg {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.2s ease;
+}
+
+.btn-submit-application:hover svg {
+  transform: translateX(4px);
+}
+
+.form-privacy-note {
+  font-size: 12px;
+  color: #777777;
+  text-align: center;
+  margin: 4px 0 0 0;
+  line-height: 1.4;
+}
+
+/* Quick Apply Modal specific */
+.career-modal-card {
+  max-width: 580px;
+}
+
+/* Responsive adjustments for Career page */
+@media (max-width: 1080px) {
+  .career-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .career-roles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .career-form-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .career-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .role-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row-2col {
+    grid-template-columns: 1fr;
+  }
+
+  .application-form-card {
+    padding: 28px 20px;
+  }
+}
+
+/* ==========================================================================
+   About Us Page Styles (about.html)
+   ========================================================================== */
+.about-hero {
+  background: linear-gradient(135deg, #021035 0%, #0B2360 55%, #06194A 100%);
+  position: relative;
+  padding-bottom: 96px;
+}
+
+/* Featured Mission Quote Card */
+.about-mission-quote-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 32px 36px 32px 76px;
+  margin-top: 24px;
+  margin-bottom: 36px;
+  max-width: 980px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.quote-accent-mark {
+  position: absolute;
+  top: 14px;
+  left: 28px;
+  font-size: 54px;
+  font-family: Georgia, serif;
+  color: #1cd66c;
+  line-height: 1;
+  opacity: 0.85;
+}
+
+.quote-text {
+  font-size: clamp(1.05rem, 1.4vw, 1.28rem);
+  line-height: 1.68;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+.quote-text strong {
+  color: #1cd66c;
+  font-weight: 600;
+}
+
+/* Hero Metrics Strip */
+.about-hero-metric-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+  max-width: 1040px;
+}
+
+.hero-stat-item {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 18px 20px;
+  backdrop-filter: blur(8px);
+}
+
+.stat-big {
+  display: block;
+  font-size: clamp(1.8rem, 2.4vw, 2.2rem);
+  font-weight: 700;
+  color: #1cd66c;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.stat-desc {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.45;
+  display: block;
+}
+
+/* The 4 Cornerstones Section */
+.about-cornerstones-section {
+  background-color: #F8F9FD;
+}
+
+.cornerstones-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+}
+
+.cornerstone-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 44px 38px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s var(--ease-spring);
+}
+
+.cornerstone-card:hover {
+  transform: translateY(-4px);
+  border-color: #0B2360;
+  box-shadow: 0 18px 45px rgba(11, 35, 96, 0.09);
+}
+
+.cornerstone-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cornerstone-num {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #0B2360;
+  background: rgba(11, 35, 96, 0.08);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  letter-spacing: 0.05em;
+}
+
+.cornerstone-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(11, 35, 96, 0.06);
+  color: #0B2360;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.cornerstone-card:hover .cornerstone-icon {
+  background: #0B2360;
+  color: #ffffff;
+}
+
+.cornerstone-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.cornerstone-title {
+  font-size: clamp(1.45rem, 2vw, 1.85rem);
+  font-weight: 600;
+  color: #141414;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+
+.cornerstone-subtitle {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #0B2360;
+  margin-bottom: 16px;
+}
+
+.cornerstone-body {
+  font-size: 15px;
+  line-height: 1.68;
+  color: #4b4b4b;
+  margin-bottom: 24px;
+}
+
+.cornerstone-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px 0;
+  border-top: 1px solid #F0F0F0;
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cornerstone-list li {
+  font-size: 13.8px;
+  color: #2b2b2b;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cornerstone-list li::before {
+  content: "✓";
+  color: #0B2360;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.cornerstone-link {
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0B2360;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.2s ease;
+}
+
+.cornerstone-link:hover {
+  gap: 8px;
+  text-decoration: underline;
+}
+
+/* The SIDD Philosophy Box */
+.about-philosophy-section {
+  background-color: #ffffff;
+}
+
+.philosophy-hero-box {
+  background: linear-gradient(135deg, #021138 0%, #0B2360 100%);
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 68px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.philosophy-title {
+  font-size: clamp(2.1rem, 3.2vw, 2.85rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.philosophy-lead {
+  font-size: 17.5px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.philosophy-desc {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 32px;
+}
+
+.philosophy-tenets-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tenet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.tenet-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(28, 214, 108, 0.18);
+  color: #1cd66c;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.tenet-item strong {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  display: block;
+}
+
+.tenet-item p {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 2px 0 0 0;
+  line-height: 1.45;
+}
+
+/* Philosophy Stats Card */
+.philosophy-stats-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  padding: 38px 32px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.p-card-badge {
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1cd66c;
+  letter-spacing: 0.08em;
+}
+
+.p-stat-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.p-stat-num {
+  font-size: clamp(2.3rem, 3.2vw, 3rem);
+  font-weight: 700;
+  color: #1cd66c;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.p-stat-label {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.45;
+}
+
+/* Journey Timeline Grid (Since 2021) */
+.about-journey-section {
+  background-color: #FAFBFD;
+}
+
+.journey-timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.journey-milestone-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s var(--ease-spring);
+  position: relative;
+}
+
+.journey-milestone-card:hover {
+  transform: translateY(-4px);
+  border-color: #0B2360;
+  box-shadow: 0 14px 34px rgba(11, 35, 96, 0.08);
+}
+
+.milestone-year-pill {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0B2360;
+  background: rgba(11, 35, 96, 0.08);
+  padding: 5px 14px;
+  border-radius: 9999px;
+  margin-bottom: 18px;
+  width: fit-content;
+}
+
+.pill-current {
+  background: #0B2360;
+  color: #ffffff;
+}
+
+.journey-milestone-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #141414;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.journey-milestone-card p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0 0 20px 0;
+  flex-grow: 1;
+}
+
+.milestone-tag {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #777777;
+  letter-spacing: 0.05em;
+  padding-top: 14px;
+  border-top: 1px solid #F0F0F0;
+}
+
+.milestone-current {
+  border-color: #0B2360;
+  background: #FCFDFE;
+  box-shadow: 0 8px 24px rgba(11, 35, 96, 0.06);
+}
+
+.tag-current {
+  color: #0B2360;
+  font-weight: 700;
+}
+
+/* Sectors Section */
+.about-sectors-section {
+  background-color: #ffffff;
+}
+
+.sector-card {
+  background: #FAFBFD;
+}
+
+.sector-card:hover {
+  background: #ffffff;
+}
+
+/* Responsive Rules for About Us */
+@media (max-width: 1200px) {
+  .journey-timeline-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .cornerstones-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero-metric-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .philosophy-hero-box {
+    grid-template-columns: 1fr;
+    padding: 44px 32px;
+  }
+
+  .journey-timeline-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .about-mission-quote-card {
+    padding: 24px 20px 24px 48px;
+  }
+
+  .quote-accent-mark {
+    font-size: 38px;
+    left: 16px;
+    top: 8px;
+  }
+
+  .about-hero-metric-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-timeline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cornerstone-card {
+    padding: 30px 22px;
+  }
+}
+
+
+
 
 

@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Sidd Business Consulting - Since 2021, partnering with businesses to bring clarity to complex operations through process excellence, technology, analytics, and strategy.">
+  <title>About Us | Sidd Business Consulting</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="service-detail-body about-body">
+
+  <!-- Floating Glassmorphic Header Navigation -->
+  <header class="header-wrapper">
+    <nav class="glass-navbar" aria-label="Main Navigation">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Sidd Business Consulting Homepage">
+        <img src="logo-white.png" alt="Sidd" class="logo-img logo-light">
+        <img src="logo.png" alt="Sidd" class="logo-img logo-dark">
+        <span class="logo-subtext">Business Consulting</span>
+      </a>
+
+      <!-- Main Navigation Menu -->
+      <ul class="nav-links">
+        <li class="nav-item has-dropdown">
+          <a href="services.html" class="nav-link-btn" aria-expanded="false" aria-haspopup="true">
+            Our Service <span class="chevron-down">▾</span>
+          </a>
+          <div class="mega-dropdown services-dropdown">
+            <div class="dropdown-inner services-grid">
+              
+              <!-- Service 1 -->
+              <a href="business-transformation.html" class="service-card-item">
+                <span class="service-tag">Operations & Systems</span>
+                <h3>Business Transformation</h3>
+                <p class="service-tagline">Transforming the way your business operates.</p>
+                <p class="service-desc">
+                  We improve processes, strengthen accountability and create structured systems that enable businesses to operate more efficiently and consistently.
+                </p>
+                <span class="service-cta">Explore Transformation →</span>
+              </a>
+
+              <!-- Service 2 -->
+              <a href="process-automation.html" class="service-card-item">
+                <span class="service-tag">Efficiency & Scale</span>
+                <h3>Process Automation</h3>
+                <p class="service-tagline">Making business processes smarter, faster and more connected.</p>
+                <p class="service-desc">
+                  We combine process improvement, technology and automation to reduce manual effort, improve visibility and build scalable operations.
+                </p>
+                <span class="service-cta">Explore Automation →</span>
+              </a>
+
+              <!-- Service 3 -->
+              <a href="growth-strategic-consulting.html" class="service-card-item">
+                <span class="service-tag">Data & Intelligence</span>
+                <h3>Growth & Strategic Consulting</h3>
+                <p class="service-tagline">Turning business data into better decisions.</p>
+                <p class="service-desc">
+                  We help management understand performance, identify opportunities and build practical strategies for sustainable business growth.
+                </p>
+                <span class="service-cta">Explore Growth →</span>
+              </a>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#connect" class="nav-link">Contact Us</a>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <a href="about.html" class="nav-link-btn active" aria-expanded="false" aria-haspopup="true">
+            About Us <span class="chevron-down">▾</span>
+          </a>
+          <div class="mega-dropdown dropdown-medium">
+            <div class="dropdown-inner">
+              <div class="dropdown-col">
+                <span class="dropdown-heading">Our Company</span>
+                <a href="about.html" class="dropdown-item"><strong>About Sidd Business Consulting</strong><small>Founded in 2021 • Bringing operational clarity</small></a>
+                <a href="about.html#cornerstones" class="dropdown-item"><strong>The 4 Cornerstones</strong><small>Process, Technology, Analytics & Strategy</small></a>
+                <a href="about.html#journey" class="dropdown-item"><strong>Our Journey Since 2021</strong><small>Milestones of enterprise impact</small></a>
+              </div>
+              <div class="dropdown-col">
+                <span class="dropdown-heading">Impact & Ethos</span>
+                <a href="about.html#philosophy" class="dropdown-item"><strong>The Sidd Philosophy</strong><small>Translating insight into everyday practical action</small></a>
+                <a href="about.html#industries" class="dropdown-item"><strong>Industry Focus</strong><small>Textiles, Manufacturing & Hospitality</small></a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="career.html" class="nav-link">Career</a>
+        </li>
+      </ul>
+
+      <!-- Right Action Items -->
+      <div class="nav-actions">
+        <!-- Consult an Expert Button -->
+        <button class="btn-consult" id="consultBtn" onclick="window.openConsultModal()">
+          <span>Consult an expert</span>
+          <span class="btn-arrow-circle">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Slide Arrow Controls (Return to Homepage) -->
+        <div class="arrow-group">
+          <a href="index.html" class="icon-pill-btn arrow-btn" aria-label="Return to Homepage" title="Homepage">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 12l-4-4 4-4"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Search Button -->
+        <button class="icon-pill-btn search-btn" id="searchBtn" aria-label="Open Search" title="Search">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Hero Section -->
+  <section class="service-hero about-hero">
+    <div class="service-hero-overlay"></div>
+    <div class="service-hero-container">
+      
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">About Us</span>
+      </nav>
+
+      <div class="service-hero-badge">Established 2021 • Enterprise Operational Advisory</div>
+      <h1 class="service-hero-title">
+        Bringing Clarity to Complex Operations.
+      </h1>
+      <p class="service-hero-tagline">
+        Translating Insight into Practical Action.
+      </p>
+
+      <!-- Featured Mission Card -->
+      <div class="about-mission-quote-card">
+        <div class="quote-accent-mark">“</div>
+        <p class="quote-text">
+          Since <strong>2021</strong>, <strong>SIDD</strong> has partnered with businesses to bring clarity to complex operations and translate insight into practical action. We combine <strong>process excellence, technology, analytics, and strategy</strong> to help organisations operate smarter, perform better, and grow with purpose.
+        </p>
+      </div>
+
+      <!-- Hero Metric Badges Strip -->
+      <div class="about-hero-metric-strip">
+        <div class="hero-stat-item">
+          <span class="stat-big">2021</span>
+          <span class="stat-desc">Founding Year • Built on Operational Rigor</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="stat-big">4 Core</span>
+          <span class="stat-desc">Disciplines: Process, Tech, Analytics & Strategy</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="stat-big">100%</span>
+          <span class="stat-desc">Practical Adoption • Frontline Shop-Floor Execution</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="stat-big">3 Key</span>
+          <span class="stat-desc">Sector Hubs: Textiles, Manufacturing, Hospitality</span>
+        </div>
+      </div>
+
+      <div class="service-hero-actions">
+        <a href="#cornerstones" class="btn-primary-consult">
+          <span>Explore Our Methodology</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3.5v9M4 8.5l4 4 4-4"/>
+          </svg>
+        </a>
+        <button class="btn-secondary-anchor" onclick="window.openConsultModal()">
+          <span>Speak With a Senior Partner</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="service-main-content">
+
+    <!-- The 4 Cornerstones Section -->
+    <section class="service-section about-cornerstones-section" id="cornerstones">
+      <div class="section-container">
+        
+        <div class="section-header-center">
+          <span class="section-kicker">Integrated Consulting Architecture</span>
+          <h2 class="section-heading">The Four Cornerstones of SIDD</h2>
+          <p class="section-subtext">
+            Operational bottlenecks rarely live in a silo. We orchestrate four critical disciplines into a single unified engagement framework to unlock sustainable enterprise scale.
+          </p>
+        </div>
+
+        <div class="cornerstones-grid">
+          
+          <!-- Cornerstone 1: Process Excellence -->
+          <div class="cornerstone-card">
+            <div class="cornerstone-header">
+              <span class="cornerstone-num">01</span>
+              <div class="cornerstone-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="cornerstone-title">Process Excellence</h3>
+            <p class="cornerstone-subtitle">Eliminating friction, defining ownership & standardizing execution.</p>
+            <p class="cornerstone-body">
+              We conduct granular workload assessments, uncover hidden operational bottlenecks, and craft clear, usable Standard Operating Procedures (SOPs). We bridge the gap between executive intent and front-line daily execution through structured accountability frameworks.
+            </p>
+            <ul class="cornerstone-list">
+              <li>Comprehensive Workload & Capacity Assessments</li>
+              <li>SOP Preparation, Work Instructions & Checklists</li>
+              <li>Everyday SOP Coaching & Active Adoption Audits</li>
+              <li>Role Definition & Department RACI Matrices</li>
+            </ul>
+            <a href="business-transformation.html" class="cornerstone-link">Explore Process Transformation →</a>
+          </div>
+
+          <!-- Cornerstone 2: Technology Integration -->
+          <div class="cornerstone-card">
+            <div class="cornerstone-header">
+              <span class="cornerstone-num">02</span>
+              <div class="cornerstone-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="cornerstone-title">Technology & Automation</h3>
+            <p class="cornerstone-subtitle">Replacing fragmented manual work with connected digital workflows.</p>
+            <p class="cornerstone-body">
+              Technology only creates value when it serves streamlined processes. We guide leadership through objective ERP product selection, oversee end-to-end implementation, automate repetitive data entry, and integrate isolated systems into a single source of truth.
+            </p>
+            <ul class="cornerstone-list">
+              <li>Objective ERP Product Selection & Implementation</li>
+              <li>Repetitive Task & Workflow Process Automation</li>
+              <li>Digital Operations & Cloud System Integration</li>
+              <li>Order-to-Delivery Fulfillment Digitalization</li>
+            </ul>
+            <a href="process-automation.html" class="cornerstone-link">Explore Technology & Automation →</a>
+          </div>
+
+          <!-- Cornerstone 3: Actionable Analytics -->
+          <div class="cornerstone-card">
+            <div class="cornerstone-header">
+              <span class="cornerstone-num">03</span>
+              <div class="cornerstone-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10"/>
+                  <line x1="12" y1="20" x2="12" y2="4"/>
+                  <line x1="6" y1="20" x2="6" y2="14"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="cornerstone-title">Actionable Analytics</h3>
+            <p class="cornerstone-subtitle">Converting operational telemetry into executive decision power.</p>
+            <p class="cornerstone-body">
+              Data trapped in spreadsheets or legacy software cannot steer an enterprise. We build clear management dashboards that expose real gross margins, machine downtime, inventory velocity, and working capital traps—enabling leaders to act before issues hit the P&L.
+            </p>
+            <ul class="cornerstone-list">
+              <li>Granular Margin & Product Contribution Analytics</li>
+              <li>Inventory Aging & Working Capital Optimization</li>
+              <li>Shop-Floor OEE & Machine Telemetry Dashboards</li>
+              <li>Financial Modeling & Cash Flow Projections</li>
+            </ul>
+            <a href="growth-strategic-consulting.html#data-analytics" class="cornerstone-link">Explore Data Analytics →</a>
+          </div>
+
+          <!-- Cornerstone 4: Pragmatic Strategy -->
+          <div class="cornerstone-card">
+            <div class="cornerstone-header">
+              <span class="cornerstone-num">04</span>
+              <div class="cornerstone-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polygon points="12 8 8 12 12 16 16 12 12 8"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="cornerstone-title">Pragmatic Strategy</h3>
+            <p class="cornerstone-subtitle">Translating ambition into measurable targets and disciplined scaling.</p>
+            <p class="cornerstone-body">
+              Strategy without operational alignment is merely aspiration. We partner with founders and boards to formulate Annual Business Plans (ABP), calibrate commercial pricing against unit economics, and align department KPIs with sustainable profitability.
+            </p>
+            <ul class="cornerstone-list">
+              <li>Annual Business Planning (ABP) & Goal Cascading</li>
+              <li>Customer & Channel Profitability Segmentation</li>
+              <li>Market Expansion & Commercial Unit Economics</li>
+              <li>Executive Governance & Monthly Steering Reviews</li>
+            </ul>
+            <a href="growth-strategic-consulting.html#marketing-strategy" class="cornerstone-link">Explore Strategy Advisory →</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- The SIDD Philosophy Section -->
+    <section class="service-section about-philosophy-section" id="philosophy">
+      <div class="section-container">
+        
+        <div class="philosophy-hero-box">
+          <div class="philosophy-content-col">
+            <span class="section-kicker kicker-light">The Sidd Philosophy</span>
+            <h2 class="philosophy-title">From Insight to Practical Action.</h2>
+            <p class="philosophy-lead">
+              Most consulting engagements fail not at the strategy level, but in the trenches of everyday operational adoption. We exist to solve the execution gap.
+            </p>
+            <p class="philosophy-desc">
+              We reject the traditional model of delivering 200-page theoretical reports and walking away. At Sidd Business Consulting, our partners spend time on the factory floor, in the warehouse aisles, and alongside frontline managers until standard operating habits are firmly rooted and measurable results are achieved.
+            </p>
+
+            <div class="philosophy-tenets-grid">
+              <div class="tenet-item">
+                <span class="tenet-icon">✓</span>
+                <div>
+                  <strong>Radical Practicality</strong>
+                  <p>Clear, straightforward procedures that workers can understand and follow without hesitation.</p>
+                </div>
+              </div>
+              <div class="tenet-item">
+                <span class="tenet-icon">✓</span>
+                <div>
+                  <strong>Root-Cause Clarity</strong>
+                  <p>Diagnosing underlying operational bottlenecks rather than prescribing superficial band-aids.</p>
+                </div>
+              </div>
+              <div class="tenet-item">
+                <span class="tenet-icon">✓</span>
+                <div>
+                  <strong>Enduring Client Capability</strong>
+                  <p>Empowering your internal team so operational excellence continues long after we finish.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="philosophy-stats-card">
+            <span class="p-card-badge">Client Impact Profile</span>
+            <div class="p-stat-block">
+              <span class="p-stat-num">500+</span>
+              <span class="p-stat-label">Critical Standard Operating Procedures Drafted & Deployed</span>
+            </div>
+            <div class="p-stat-block">
+              <span class="p-stat-num">25%+</span>
+              <span class="p-stat-label">Average Reduction in Order-to-Delivery Fulfillment Cycle Times</span>
+            </div>
+            <div class="p-stat-block">
+              <span class="p-stat-num">18-35%</span>
+              <span class="p-stat-label">Reduction in Excess Working Capital Trapped in Inactive Inventory</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Our Journey & Evolution Timeline (Since 2021) -->
+    <section class="service-section about-journey-section" id="journey">
+      <div class="section-container">
+        
+        <div class="section-header-center">
+          <span class="section-kicker">Our Evolution</span>
+          <h2 class="section-heading">The Journey Since 2021</h2>
+          <p class="section-subtext">
+            From our founding with a clear vision of operational clarity, to architecting mission-critical systems across India’s core industries.
+          </p>
+        </div>
+
+        <div class="journey-timeline-grid">
+          
+          <!-- Milestone 1: 2021 -->
+          <div class="journey-milestone-card">
+            <div class="milestone-year-pill">2021</div>
+            <h3>Founding & The Operational Clarity Mission</h3>
+            <p>
+              Sidd Business Consulting is established. Born out of the recognition that mid-market enterprises were held back not by lack of ambition, but by operational friction, unwritten processes, and key-person dependency.
+            </p>
+            <div class="milestone-tag">Foundational Launch</div>
+          </div>
+
+          <!-- Milestone 2: 2022 -->
+          <div class="journey-milestone-card">
+            <div class="milestone-year-pill">2022</div>
+            <h3>SOP & Workload Practice Expansion</h3>
+            <p>
+              Pioneered our signature Workload Assessment methodology across discrete manufacturing plants and textile mills, turning chaotic shop-floor habits into repeatable, documented SOPs with active frontline coaching.
+            </p>
+            <div class="milestone-tag">Process Excellence</div>
+          </div>
+
+          <!-- Milestone 3: 2023 -->
+          <div class="journey-milestone-card">
+            <div class="milestone-year-pill">2023</div>
+            <h3>Process Automation & ERP Practice</h3>
+            <p>
+              Launched the Intelligent Process Automation practice. Partnered with mid-market enterprises to objectively evaluate, select, and successfully adopt enterprise ERPs, eliminating manual spreadsheet bottlenecks.
+            </p>
+            <div class="milestone-tag">Digital Systems</div>
+          </div>
+
+          <!-- Milestone 4: 2024 -->
+          <div class="journey-milestone-card">
+            <div class="milestone-year-pill">2024</div>
+            <h3>Financial Telemetry & Analytics Hub</h3>
+            <p>
+              Introduced decision-grade operational and financial analytics. Built automated contribution margin trackers, working capital diagnostic engines, and real-time executive performance dashboards.
+            </p>
+            <div class="milestone-tag">Data Intelligence</div>
+          </div>
+
+          <!-- Milestone 5: 2025–2026 -->
+          <div class="journey-milestone-card milestone-current">
+            <div class="milestone-year-pill pill-current">2025–2026</div>
+            <h3>Industry Specialization & Talent Academy</h3>
+            <p>
+              Scaling specialized industry practices across Textiles, Manufacturing, and Hospitality. Established early-career consulting academies mentoring top commerce graduates in Python, SQL, and applied AI.
+            </p>
+            <div class="milestone-tag tag-current">Present & Future</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Industry Sectors We Transform -->
+    <section class="service-section about-sectors-section" id="industries">
+      <div class="section-container">
+        
+        <div class="section-header-center">
+          <span class="section-kicker">Deep Domain Focus</span>
+          <h2 class="section-heading">Sectors Where We Drive Value</h2>
+          <p class="section-subtext">
+            We don’t believe in generic consulting. Our teams bring deep, practical knowledge of supply chain physics, shop-floor line balances, and operational unit economics.
+          </p>
+        </div>
+
+        <div class="capabilities-grid capabilities-grid-three">
+          
+          <!-- Sector 1: Textiles & Garments -->
+          <div class="capability-card sector-card">
+            <div class="capability-card-top">
+              <span class="pillar-number">Sector 01</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.5a2 2 0 0 0 1.25 1.55L6 11.5v6.5a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-6.5l1.89-.76a2 2 0 0 0 1.25-1.55l.58-3.5a2 2 0 0 0-1.34-2.23z"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">Textile & Garment Manufacturing</h3>
+            <p class="capability-desc">
+              From yarn procurement and fabric processing to garmenting assembly and export fulfillment. We streamline dyeing line queues, optimize fabric cutting yields, and slash inventory turns across multi-location mills.
+            </p>
+            <ul class="capability-bullets">
+              <li>Cutting room fabric utilization & yield analysis</li>
+              <li>WIP tracking across spinning, weaving & dyeing</li>
+              <li>Order-to-shipment export lead time control</li>
+              <li>Greige & finished fabric inventory rationalization</li>
+            </ul>
+          </div>
+
+          <!-- Sector 2: Discrete & Process Manufacturing -->
+          <div class="capability-card sector-card">
+            <div class="capability-card-top">
+              <span class="pillar-number">Sector 02</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">Discrete & Process Manufacturing</h3>
+            <p class="capability-desc">
+              Engineering, automotive ancillaries, packaging, and precision fabrication plants. We bring mathematical line balancing, machine availability rigor, and BOM accuracy to factory operations.
+            </p>
+            <ul class="capability-bullets">
+              <li>Overall Equipment Effectiveness (OEE) optimization</li>
+              <li>Preventive maintenance & machine downtime reduction</li>
+              <li>Bill of Materials (BOM) & inventory accuracy</li>
+              <li>Assembly line capacity mapping & labor balance</li>
+            </ul>
+          </div>
+
+          <!-- Sector 3: Hospitality & Multi-Unit Services -->
+          <div class="capability-card sector-card">
+            <div class="capability-card-top">
+              <span class="pillar-number">Sector 03</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">Hospitality & Multi-Unit Operations</h3>
+            <p class="capability-desc">
+              Hotels, resorts, F&B restaurant chains, and commercial facilities. We establish unbreakable service quality SOPs, food and beverage cost controls, and shift scheduling routines to protect operating margins.
+            </p>
+            <ul class="capability-bullets">
+              <li>Comprehensive front-office & housekeeping SOPs</li>
+              <li>F&B procurement, portion control & wastage audits</li>
+              <li>Variable labor scheduling against occupancy forecast</li>
+              <li>Guest satisfaction metrics & unit margin visibility</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Connect With Us Section (Standardized Theme) -->
+    <section class="connect-section" id="connect">
+      <div class="connect-container">
+        
+        <!-- Left Content -->
+        <div class="connect-content">
+          <h2 class="connect-title">Connect with us</h2>
+          <p class="connect-desc">
+            Partner with Sidd Business Consulting to bring clarity, discipline, and measurable performance to your organization's operations. Speak with our leadership today.
+          </p>
+          <button class="btn-connect-talk" onclick="window.openConsultModal()">
+            <span>Speak with a Partner</span>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 4l4 4-4 4"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Right Graphic: Geometric Lines Pattern in Sidd Blue -->
+        <div class="connect-graphic" aria-hidden="true">
+          <svg class="connect-lines-svg" viewBox="0 0 800 360" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="blueLatticeFadeAbout" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+                <stop offset="16%" stop-color="#ffffff" stop-opacity="0.9" />
+                <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+              </linearGradient>
+              <mask id="latticeMaskAbout">
+                <rect width="800" height="360" fill="url(#blueLatticeFadeAbout)" />
+              </mask>
+              <pattern id="blueLatticeAbout" width="28" height="360" patternUnits="userSpaceOnUse">
+                <line x1="0" y1="0" x2="0" y2="360" stroke="#0B2360" stroke-width="1.3" />
+                <line x1="0" y1="180" x2="28" y2="0" stroke="#0B2360" stroke-width="1.3" />
+                <line x1="0" y1="180" x2="28" y2="360" stroke="#0B2360" stroke-width="1.3" />
+              </pattern>
+            </defs>
+            <rect width="800" height="360" fill="url(#blueLatticeAbout)" mask="url(#latticeMaskAbout)" />
+          </svg>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo" aria-label="Sidd Business Consulting Homepage">
+          <img src="logo.png" alt="Sidd Logo" class="footer-logo-img">
+          <span class="footer-logo-sub">Business Consulting</span>
+        </a>
+        
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.97 0 1.76-.79 1.76-1.76a1.76 1.76 0 1 0-3.52 0c0 .97.79 1.76 1.76 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav-grid">
+        <div class="footer-section">
+          <h3 class="footer-heading">Services</h3>
+          <div class="heading-accent-bar" style="background-color: #0B2360;"></div>
+          <div class="footer-subcolumns">
+            <ul class="footer-link-list">
+              <li><a href="services.html" style="font-weight: 600; color: #0B2360;">All Services Overview</a></li>
+              <li><a href="business-transformation.html">Business Transformation</a></li>
+              <li><a href="process-automation.html">Process Automation</a></li>
+              <li><a href="growth-strategic-consulting.html">Growth & Strategic Consulting</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="business-transformation.html#workload-assessment">Workload Assessment</a></li>
+              <li><a href="business-transformation.html#sop-preparation">SOP Preparation</a></li>
+              <li><a href="process-automation.html#erp-implementation">ERP Implementation</a></li>
+              <li><a href="career.html">Careers & Internships</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-heading">About Us</h3>
+          <div class="heading-accent-bar" style="background-color: #0B2360;"></div>
+          <div class="footer-subcolumns">
+            <ul class="footer-link-list">
+              <li><a href="about.html" style="font-weight: 600; color: #0B2360;">About Sidd Business Consulting</a></li>
+              <li><a href="about.html#cornerstones">The 4 Cornerstones</a></li>
+              <li><a href="about.html#journey">Our Journey Since 2021</a></li>
+              <li><a href="about.html#philosophy">The Sidd Philosophy</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="career.html">Careers at Sidd</a></li>
+              <li><a href="about.html#industries">Industries We Serve</a></li>
+              <li><a href="services.html">Our Services & Solutions</a></li>
+              <li><a href="#connect">Contact Advisory</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy</a>
+          <span class="legal-separator">|</span>
+          <a href="#terms">Terms</a>
+          <span class="legal-separator">|</span>
+          <a href="#security">Security</a>
+          <span class="legal-separator">|</span>
+          <a href="#certifications">Certifications</a>
+          <span class="legal-separator">|</span>
+          <a href="#sitemap">Sitemap</a>
+          <span class="legal-separator">|</span>
+          <a href="#do-not-sell">Do not sell or share my personal information</a>
+          <span class="legal-separator">|</span>
+          <a href="#accessibility">Accessibility</a>
+          <span class="legal-separator">|</span>
+          <a href="#cookies">Cookie Preferences</a>
+        </div>
+
+        <div class="footer-locale">
+          <button class="footer-locale-btn" id="footerLocaleBtn" aria-label="Region selector">
+            <span>IN - EN</span>
+            <span class="locale-arrow">▴</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>Copyright © 2026 Sidd Business Consulting Inc. All rights reserved</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Consult Modal -->
+  <div class="modal-overlay" id="consultModal" aria-hidden="true">
+    <div class="modal-card consult-card">
+      <button class="modal-close-btn" id="closeConsultModal" aria-label="Close Modal">✕</button>
+      <div class="consult-header">
+        <span class="badge-accent">Global Advisory</span>
+        <h2>Consult a Sidd Practice Lead</h2>
+        <p>Connect with senior architects across Business Transformation, Process Automation, or Strategic Growth.</p>
+      </div>
+      <form class="consult-form" id="consultForm" onsubmit="event.preventDefault(); window.submitConsult();">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Jane" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Doe" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="businessEmail">Business Email</label>
+          <input type="email" id="businessEmail" placeholder="jane.doe@enterprise.com" required>
+        </div>
+        <div class="form-group">
+          <label for="topic">Topic of Discussion</label>
+          <select id="topic" required>
+            <option value="business-transformation">Business Transformation (SOPs & Operations)</option>
+            <option value="process-automation">Process Automation & ERP Implementation</option>
+            <option value="growth-strategy">Growth & Strategic Advisory (Analytics & ABP)</option>
+            <option value="general-advisory">General Operational Consultation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comments">Message / Scope</label>
+          <textarea id="comments" rows="3" placeholder="Tell us about your organization's operational scope or goals..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit-consult">
+          Submit Consultation Request →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Search Modal Overlay -->
+  <div class="modal-overlay" id="searchModal" aria-hidden="true">
+    <div class="modal-card search-card">
+      <div class="search-header">
+        <div class="search-input-wrap">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Search about Sidd, methodology, partners..." autofocus>
+        </div>
+        <button class="modal-close-btn" id="closeSearchModal" aria-label="Close Search">✕</button>
+      </div>
+      <div class="search-suggestions">
+        <span class="suggestion-label">Popular Searches:</span>
+        <button class="suggestion-tag" onclick="location.href='about.html#cornerstones'">The 4 Cornerstones</button>
+        <button class="suggestion-tag" onclick="location.href='about.html#journey'">Journey Since 2021</button>
+        <button class="suggestion-tag" onclick="location.href='about.html#philosophy'">The Sidd Philosophy</button>
+        <button class="suggestion-tag" onclick="location.href='services.html'">Our Services</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toastNotification" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toastMessage">Request sent successfully!</span>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="logo-white.png" alt="Sidd" class="drawer-logo-img">
+      <button class="modal-close-btn" id="closeMobileDrawer">✕</button>
+    </div>
+    <div class="drawer-content">
+      <a href="services.html" class="drawer-link">All Services</a>
+      <a href="business-transformation.html" class="drawer-link">Business Transformation</a>
+      <a href="process-automation.html" class="drawer-link">Process Automation</a>
+      <a href="growth-strategic-consulting.html" class="drawer-link">Growth & Strategy</a>
+      <a href="about.html" class="drawer-link active">About Us</a>
+      <a href="career.html" class="drawer-link">Careers</a>
+      <a href="#connect" class="drawer-link" onclick="document.getElementById('mobileDrawer').classList.remove('active');">Contact Us</a>
+      <hr class="drawer-divider">
+      <button class="btn-consult mobile-consult-btn" onclick="window.openConsultModal()">
+        <span>Consult an expert</span>
+        <span class="btn-arrow-circle">➔</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- EmailJS SDK for GitHub Pages Mail Delivery -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

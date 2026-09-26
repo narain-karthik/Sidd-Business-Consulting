@@ -317,13 +317,16 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // --- Close Modals on Backdrop Click ---
+  const careerApplyModal = document.getElementById('careerApplyModal');
+
   function closeAllModals() {
     closeSearch();
     closeConsult();
+    if (window.closeCareerApplyModal) window.closeCareerApplyModal();
     if (mobileDrawer) mobileDrawer.classList.remove('active');
   }
 
-  [searchModal, consultModal].forEach(modal => {
+  [searchModal, consultModal, careerApplyModal].filter(Boolean).forEach(modal => {
     modal.addEventListener('click', (e) => {
       if (e.target === modal) {
         closeAllModals();
@@ -438,6 +441,143 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // --- Career Page: Interactive Application & Modals ---
+  window.openCareerApplyModal = function(roleName) {
+    if (careerApplyModal) {
+      careerApplyModal.classList.add('active');
+      careerApplyModal.setAttribute('aria-hidden', 'false');
+      if (roleName) {
+        const modalRoleSelect = document.getElementById('modalApplicantRole');
+        if (modalRoleSelect) modalRoleSelect.value = roleName;
+      }
+      const firstInput = careerApplyModal.querySelector('input');
+      if (firstInput) setTimeout(() => firstInput.focus(), 100);
+    }
+  };
+
+  window.closeCareerApplyModal = function() {
+    if (careerApplyModal) {
+      careerApplyModal.classList.remove('active');
+      careerApplyModal.setAttribute('aria-hidden', 'true');
+    }
+  };
+
+  window.selectRoleAndApply = function(roleName) {
+    // Populate on-page form dropdown if present
+    const pageRoleSelect = document.getElementById('applicantRole');
+    if (pageRoleSelect) {
+      pageRoleSelect.value = roleName;
+      const applySection = document.getElementById('apply');
+      if (applySection) {
+        applySection.scrollIntoView({ behavior: 'smooth' });
+        const nameInput = document.getElementById('applicantName');
+        if (nameInput) setTimeout(() => nameInput.focus(), 600);
+        return;
+      }
+    }
+    // Fallback to quick apply modal
+    window.openCareerApplyModal(roleName);
+  };
+
+  // Resume File Selection & Drag & Drop Handling
+  window.handleFileSelect = function(inputElement, statusElementId) {
+    const statusEl = document.getElementById(statusElementId);
+    if (!inputElement.files || inputElement.files.length === 0) {
+      if (statusEl) statusEl.textContent = '';
+      return;
+    }
+
+    const file = inputElement.files[0];
+    const validExtensions = ['.pdf', '.doc', '.docx'];
+    const fileName = file.name.toLowerCase();
+    const isValidType = validExtensions.some(ext => fileName.endsWith(ext));
+    const maxSizeMB = 5;
+    const isSizeOk = file.size <= maxSizeMB * 1024 * 1024;
+
+    if (!isValidType) {
+      alert('Please upload a valid document (.PDF, .DOC, or .DOCX).');
+      inputElement.value = '';
+      if (statusEl) {
+        statusEl.innerHTML = '<span style="color: #e53935;">✕ Invalid format. PDF or Word only.</span>';
+      }
+      return;
+    }
+
+    if (!isSizeOk) {
+      alert(`File size exceeds ${maxSizeMB}MB limit. Please attach a smaller file.`);
+      inputElement.value = '';
+      if (statusEl) {
+        statusEl.innerHTML = '<span style="color: #e53935;">✕ File exceeds 5MB limit.</span>';
+      }
+      return;
+    }
+
+    const fileSizeFormatted = (file.size / 1024).toFixed(1) + ' KB';
+    if (statusEl) {
+      statusEl.innerHTML = `<span style="color: #0d8a42; font-weight: 600;">✓ Attached: ${file.name} (${fileSizeFormatted})</span>`;
+    }
+  };
+
+  // Drag and drop events for file drop zone
+  const fileDropZone = document.getElementById('fileDropZone');
+  const mainFileInput = document.getElementById('applicantResume');
+
+  if (fileDropZone && mainFileInput) {
+    ['dragenter', 'dragover'].forEach(eventName => {
+      fileDropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        fileDropZone.classList.add('dragover');
+      });
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+      fileDropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        fileDropZone.classList.remove('dragover');
+      });
+    });
+
+    fileDropZone.addEventListener('drop', (e) => {
+      if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+        mainFileInput.files = e.dataTransfer.files;
+        window.handleFileSelect(mainFileInput, 'fileUploadStatus');
+      }
+    });
+  }
+
+  // Application Submission Handler
+  window.handleCareerApplication = function(e, formElement) {
+    e.preventDefault();
+
+    const formData = new FormData(formElement);
+    const applicantName = formData.get('fullName') || 'Applicant';
+    const role = formData.get('role') || 'Consulting Intern';
+    const degree = formData.get('degree') || 'B.Com / M.Com';
+    const email = formData.get('email');
+    const mobile = formData.get('mobile');
+    const resumeFile = formData.get('resume');
+
+    if (!resumeFile || (resumeFile instanceof File && resumeFile.size === 0)) {
+      alert('Please upload your Resume (PDF or Word) before submitting.');
+      return;
+    }
+
+    // Success notification
+    showToast(`Thank you, ${applicantName}! Your application for ${role} (${degree}) has been successfully submitted. Our team will review your profile within 48 hours.`);
+
+    // Reset form & indicators
+    formElement.reset();
+    const status1 = document.getElementById('fileUploadStatus');
+    const status2 = document.getElementById('modalFileStatus');
+    if (status1) status1.innerHTML = '';
+    if (status2) status2.innerHTML = '';
+
+    // Close modal if open
+    window.closeCareerApplyModal();
+  };
 
   // Initialize auto slide
   startAutoSlide();

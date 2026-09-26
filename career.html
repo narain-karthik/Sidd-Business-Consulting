@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Careers at Sidd Business Consulting - Analytics Consulting Intern & Strategy Consulting Intern. 6-Month Paid Internship with fast-track permanent posting for B.Com and M.Com graduates.">
+  <title>Careers & Internships | Sidd Business Consulting</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="service-detail-body career-body">
+
+  <!-- Floating Glassmorphic Header Navigation -->
+  <header class="header-wrapper">
+    <nav class="glass-navbar" aria-label="Main Navigation">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Sidd Business Consulting Homepage">
+        <img src="logo-white.png" alt="Sidd" class="logo-img logo-light">
+        <img src="logo.png" alt="Sidd" class="logo-img logo-dark">
+        <span class="logo-subtext">Business Consulting</span>
+      </a>
+
+      <!-- Main Navigation Menu -->
+      <ul class="nav-links">
+        <li class="nav-item has-dropdown">
+          <a href="services.html" class="nav-link-btn" aria-expanded="false" aria-haspopup="true">
+            Our Service <span class="chevron-down">▾</span>
+          </a>
+          <div class="mega-dropdown services-dropdown">
+            <div class="dropdown-inner services-grid">
+              
+              <!-- Service 1 -->
+              <a href="business-transformation.html" class="service-card-item">
+                <span class="service-tag">Operations & Systems</span>
+                <h3>Business Transformation</h3>
+                <p class="service-tagline">Transforming the way your business operates.</p>
+                <p class="service-desc">
+                  We improve processes, strengthen accountability and create structured systems that enable businesses to operate more efficiently.
+                </p>
+                <span class="service-cta">Explore Transformation →</span>
+              </a>
+
+              <!-- Service 2 -->
+              <a href="process-automation.html" class="service-card-item">
+                <span class="service-tag">Efficiency & Scale</span>
+                <h3>Process Automation</h3>
+                <p class="service-tagline">Making business processes smarter, faster and more connected.</p>
+                <p class="service-desc">
+                  We combine process improvement, technology and automation to reduce manual effort and build scalable operations.
+                </p>
+                <span class="service-cta">Explore Automation →</span>
+              </a>
+
+              <!-- Service 3 -->
+              <a href="growth-strategic-consulting.html" class="service-card-item">
+                <span class="service-tag">Data & Intelligence</span>
+                <h3>Growth & Strategic Consulting</h3>
+                <p class="service-tagline">Turning business data into better decisions.</p>
+                <p class="service-desc">
+                  We help management understand performance, identify opportunities and build practical strategies for sustainable growth.
+                </p>
+                <span class="service-cta">Explore Growth →</span>
+              </a>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#apply" class="nav-link">Apply Now</a>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <a href="about.html" class="nav-link-btn" aria-expanded="false" aria-haspopup="true">
+            About Us <span class="chevron-down">▾</span>
+          </a>
+          <div class="mega-dropdown dropdown-medium">
+            <div class="dropdown-inner">
+              <div class="dropdown-col">
+                <span class="dropdown-heading">Our Company</span>
+                <a href="about.html" class="dropdown-item"><strong>About Sidd Business Consulting</strong><small>Founded in 2021 • Bringing operational clarity</small></a>
+                <a href="about.html#cornerstones" class="dropdown-item"><strong>The 4 Cornerstones</strong><small>Process, Technology, Analytics & Strategy</small></a>
+                <a href="about.html#journey" class="dropdown-item"><strong>Our Journey Since 2021</strong><small>Milestones of enterprise impact</small></a>
+              </div>
+              <div class="dropdown-col">
+                <span class="dropdown-heading">Impact</span>
+                <a href="index.html#esg" class="dropdown-item"><strong>Environmental & Social (ESG)</strong><small>Building a sustainable, inclusive operational future</small></a>
+                <a href="index.html#culture" class="dropdown-item"><strong>The Sidd Way</strong><small>Our values, code of ethics and purpose</small></a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="career.html" class="nav-link active">Career</a>
+        </li>
+      </ul>
+
+      <!-- Right Action Items -->
+      <div class="nav-actions">
+        <!-- Quick Apply Header Button -->
+        <button class="btn-consult" id="headerApplyBtn" onclick="window.openCareerApplyModal()">
+          <span>Quick Apply</span>
+          <span class="btn-arrow-circle">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Slide Arrow Controls (Return to Homepage) -->
+        <div class="arrow-group">
+          <a href="index.html" class="icon-pill-btn arrow-btn" aria-label="Return to Homepage" title="Homepage">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 12l-4-4 4-4"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Search Button -->
+        <button class="icon-pill-btn search-btn" id="searchBtn" aria-label="Open Search" title="Search">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Career Hero Section -->
+  <section class="service-hero career-hero">
+    <div class="service-hero-overlay"></div>
+    <div class="service-hero-container">
+      
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Careers & Internships</span>
+      </nav>
+
+      <div class="service-hero-badge">Early Career & Graduate Pathways 2026</div>
+      <h1 class="service-hero-title">
+        Launch Your Consulting Career With High-Impact Operational Work.
+      </h1>
+      <p class="service-hero-tagline">
+        6-Month Paid Internship with Fast-Track Permanent Posting (PPO) for B.Com & M.Com Graduates.
+      </p>
+      <p class="service-hero-summary">
+        At Sidd Business Consulting, we don’t relegate interns to coffee runs or paper-pushing. From your first month, you will work side-by-side with seasoned partners analyzing real business models, deploying automated workflows, and transforming operations across India’s leading textile, manufacturing, and hospitality enterprises.
+      </p>
+
+      <!-- Career Highlight Badges -->
+      <div class="career-perks-row">
+        <span class="career-pill">
+          <span class="pill-dot"></span> 6-Month Paid Internship
+        </span>
+        <span class="career-pill">
+          <span class="pill-dot"></span> Permanent Posting Upon Good Performance
+        </span>
+        <span class="career-pill">
+          <span class="pill-dot"></span> B.Com / M.Com Graduates
+        </span>
+        <span class="career-pill">
+          <span class="pill-dot"></span> Python, SQL & Applied AI
+        </span>
+      </div>
+
+      <div class="service-hero-actions">
+        <a href="#open-roles" class="btn-primary-consult">
+          <span>Explore Open Roles</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3.5v9M4 8.5l4 4 4-4"/>
+          </svg>
+        </a>
+        <a href="#apply" class="btn-secondary-anchor">
+          <span>Apply Directly Below</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Career Content -->
+  <main class="service-main-content">
+
+    <!-- Value Proposition: Why Sidd? -->
+    <section class="service-section career-value-section">
+      <div class="section-container">
+        
+        <div class="section-header-center">
+          <span class="section-kicker">Why Start At Sidd Business Consulting?</span>
+          <h2 class="section-heading">Not Just an Internship. A Real Consulting Foundation.</h2>
+          <p class="section-subtext">
+            We look for proactive commerce minds who are eager to blend financial acumen with modern programming, query engines, and AI tools to solve real enterprise challenges.
+          </p>
+        </div>
+
+        <div class="career-values-grid">
+          
+          <div class="career-value-card">
+            <div class="value-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3>Competitive Paid Compensation</h3>
+            <p>
+              Receive a structured monthly stipend throughout your 6-month tenure. We value your intellectual contribution and treat interns as professional associate consultants.
+            </p>
+          </div>
+
+          <div class="career-value-card">
+            <div class="value-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="8.5" cy="7" r="4"/>
+                <polyline points="17 11 19 13 23 9"/>
+              </svg>
+            </div>
+            <h3>Performance-Based Permanent Posting</h3>
+            <p>
+              Your internship is an audition for leadership. Demonstrate ownership, quality documentation, and analytical drive to receive a permanent full-time Associate Consultant offer.
+            </p>
+          </div>
+
+          <div class="career-value-card">
+            <div class="value-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3>Modern Tooling & Applied AI</h3>
+            <p>
+              Move beyond basic spreadsheets. You will write Python scripts, run SQL queries, and leverage Generative AI workflows to deliver analytics 5x faster than legacy consultancies.
+            </p>
+          </div>
+
+          <div class="career-value-card">
+            <div class="value-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3>Real Domain Depth in Key Sectors</h3>
+            <p>
+              Gain specialized exposure to India’s highest-impact industries: <strong>Textile supply chains</strong>, <strong>discrete manufacturing shop-floors</strong>, and <strong>hospitality operations</strong>.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Open Roles Section -->
+    <section class="service-section career-roles-section" id="open-roles">
+      <div class="section-container">
+        
+        <div class="section-header-left">
+          <span class="section-kicker">Open Opportunities</span>
+          <h2 class="section-heading">Select Your Consulting Track</h2>
+          <p class="section-subtext">
+            We are actively hiring interns across two specialized practice tracks. Both tracks are 6-month paid positions with permanent placement opportunities.
+          </p>
+        </div>
+
+        <div class="career-roles-grid">
+          
+          <!-- Role 1: Analytics Consulting Intern -->
+          <article class="career-role-box" id="role-analytics">
+            <div class="role-box-top">
+              <div class="role-badges">
+                <span class="role-badge-track">Analytics Practice</span>
+                <span class="role-badge-stipend">Paid 6 Months</span>
+              </div>
+              <span class="role-ppo-tag">★ Permanent Posting Eligible</span>
+            </div>
+
+            <h3 class="role-title">Analytics Consulting Intern</h3>
+            <p class="role-tagline">Turning complex operational and financial data into executive decisions.</p>
+
+            <div class="role-meta-grid">
+              <div class="meta-item">
+                <span class="meta-label">Degree Required:</span>
+                <span class="meta-val">B.Com / M.Com (Commerce / Finance)</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Duration:</span>
+                <span class="meta-val">6 Months (Full-Time / Paid)</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Target Sectors:</span>
+                <span class="meta-val">Textile, Manufacturing & Hospitality</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Key Stack:</span>
+                <span class="meta-val">MS Excel, Python, SQL & AI Tools</span>
+              </div>
+            </div>
+
+            <div class="role-section-block">
+              <h4>Role Responsibilities:</h4>
+              <ul class="role-bullet-list">
+                <li>Extract, clean, and validate transactional data from ERPs, production logs, and accounting books.</li>
+                <li>Design financial models, contribution margin analyses, and inventory turnover dashboards.</li>
+                <li>Write basic SQL queries and Python scripts to automate routine reporting and data aggregation.</li>
+                <li>Use generative AI prompts to synthesize market research, identify operational anomalies, and prepare summary briefs.</li>
+                <li>Collaborate with practice partners on executive presentations for C-level manufacturing clients.</li>
+              </ul>
+            </div>
+
+            <div class="role-section-block">
+              <h4>Required Candidate Profile:</h4>
+              <ul class="role-bullet-list">
+                <li>Graduating B.Com or M.Com student with a solid understanding of commerce, cost accounting, and financial statements.</li>
+                <li>Strong command of Microsoft Office, especially advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables).</li>
+                <li>Familiarity with basic Python (pandas/dataframes) and SQL (SELECT, JOIN, GROUP BY).</li>
+                <li>Curiosity to learn manufacturing cost drivers, textile supply dynamics, or hospitality P&L mechanics.</li>
+              </ul>
+            </div>
+
+            <div class="role-action-row">
+              <button class="btn-role-apply" onclick="window.selectRoleAndApply('Analytics Consulting Intern')">
+                <span>Apply for Analytics Track</span>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Role 2: Strategy Consulting Intern -->
+          <article class="career-role-box" id="role-strategy">
+            <div class="role-box-top">
+              <div class="role-badges">
+                <span class="role-badge-track track-strategy">Strategy Practice</span>
+                <span class="role-badge-stipend">Paid 6 Months</span>
+              </div>
+              <span class="role-ppo-tag">★ Permanent Posting Eligible</span>
+            </div>
+
+            <h3 class="role-title">Strategy Consulting Intern</h3>
+            <p class="role-tagline">Architecting standard operating procedures and business growth roadmaps.</p>
+
+            <div class="role-meta-grid">
+              <div class="meta-item">
+                <span class="meta-label">Degree Required:</span>
+                <span class="meta-val">B.Com / M.Com (Commerce / Management)</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Duration:</span>
+                <span class="meta-val">6 Months (Full-Time / Paid)</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Target Sectors:</span>
+                <span class="meta-val">Textile, Manufacturing & Hospitality</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Key Stack:</span>
+                <span class="meta-val">MS PowerPoint, Word, Excel, AI Prompts</span>
+              </div>
+            </div>
+
+            <div class="role-section-block">
+              <h4>Role Responsibilities:</h4>
+              <ul class="role-bullet-list">
+                <li>Conduct workload assessments, process mapping, and bottleneck analysis on client shop floors.</li>
+                <li>Draft structured, easy-to-follow Standard Operating Procedures (SOPs) and RACI matrices for staff.</li>
+                <li>Assist in drafting Annual Business Plans, unit economics projections, and sales milestone trackers.</li>
+                <li>Leverage AI tools to accelerate documentation drafting, research industry benchmarks, and structure slide storylines.</li>
+                <li>Participate in client review workshops across textile processing units, manufacturing sites, and hospitality venues.</li>
+              </ul>
+            </div>
+
+            <div class="role-section-block">
+              <h4>Required Candidate Profile:</h4>
+              <ul class="role-bullet-list">
+                <li>B.Com or M.Com graduate with outstanding verbal clarity, structured reasoning, and documentation skills.</li>
+                <li>High proficiency in Microsoft PowerPoint (executive slide structuring) and Microsoft Word.</li>
+                <li>Comfort reading business metrics, basic SQL/Python data tables, and interpreting operational dashboards.</li>
+                <li>Enthusiasm for fieldwork, understanding how factory floors produce goods and hotels deliver service quality.</li>
+              </ul>
+            </div>
+
+            <div class="role-action-row">
+              <button class="btn-role-apply" onclick="window.selectRoleAndApply('Strategy Consulting Intern')">
+                <span>Apply for Strategy Track</span>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills & Target Industries Matrix -->
+    <section class="service-section career-matrix-section">
+      <div class="section-container">
+        
+        <div class="section-header-center">
+          <span class="section-kicker">Core Capabilities</span>
+          <h2 class="section-heading">What We Look For in Candidates</h2>
+          <p class="section-subtext">
+            You don’t need 10 years of experience. We value strong commerce foundations, proactive curiosity with modern tech, and passion for real industrial operations.
+          </p>
+        </div>
+
+        <div class="capabilities-grid capabilities-grid-three">
+          
+          <!-- Pillar 1: Academic & Commerce -->
+          <div class="capability-card">
+            <div class="capability-card-top">
+              <span class="pillar-number">01</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">B.Com / M.Com Foundation</h3>
+            <p class="capability-desc">
+              Strong grasp of commerce principles: financial accounting, cost accounting, cash-flow cycles, and balance sheet structure.
+            </p>
+            <ul class="capability-bullets">
+              <li>P&L and gross margin calculation</li>
+              <li>Working capital & inventory basics</li>
+              <li>Depreciation, overheads & EBITDA fundamentals</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2: Technical & AI Stack -->
+          <div class="capability-card">
+            <div class="capability-card-top">
+              <span class="pillar-number">02</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">MS Office, Python, SQL & AI</h3>
+            <p class="capability-desc">
+              Practical readiness with Microsoft Office tools alongside basic code scripts and modern generative AI assistance.
+            </p>
+            <ul class="capability-bullets">
+              <li>Excel modeling & executive PowerPoint decks</li>
+              <li>Basic Python for data parsing & automation</li>
+              <li>Basic SQL queries & Gen-AI prompt fluency</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3: Industry Understanding -->
+          <div class="capability-card">
+            <div class="capability-card-top">
+              <span class="pillar-number">03</span>
+              <div class="capability-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                  <line x1="3" y1="6" x2="21" y2="6"/>
+                  <path d="M16 10a4 4 0 0 1-8 0"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="capability-title">Sector Understanding</h3>
+            <p class="capability-desc">
+              Fundamental curiosity about how real brick-and-mortar industries manufacture goods, handle stock, and serve customers.
+            </p>
+            <ul class="capability-bullets">
+              <li><strong>Textiles</strong>: Yarns, fabric processing & export cycles</li>
+              <li><strong>Manufacturing</strong>: Shop floors, line balance & OEE</li>
+              <li><strong>Hospitality</strong>: Room occupancy, F&B operations & SOPs</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Hiring Journey: 4-Stage Stepper -->
+    <section class="service-section lifecycle-section">
+      <div class="section-container">
+        
+        <div class="section-header-center">
+          <span class="section-kicker">Transparent Hiring Process</span>
+          <h2 class="section-heading">How We Select & Onboard You</h2>
+          <p class="section-subtext">
+            Our hiring process moves quickly. Top candidates receive offers within 10 to 14 business days.
+          </p>
+        </div>
+
+        <div class="lifecycle-timeline">
+          
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Stage 01</span>
+              <h4>Application & Screening</h4>
+            </div>
+            <p>
+              Submit your details and resume below. Our consulting team reviews your academic track, degree (B.Com/M.Com), and analytical interests within 48 hours.
+            </p>
+          </div>
+
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Stage 02</span>
+              <h4>Practical Case Prompt</h4>
+            </div>
+            <p>
+              A short, real-world case prompt testing basic Excel logic, data interpretation, or an SOP scenario. You are encouraged to use modern AI tools to augment your answer.
+            </p>
+          </div>
+
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Stage 03</span>
+              <h4>Partner Interview</h4>
+            </div>
+            <p>
+              A 30-minute conversation with a practice director discussing your commerce interests, problem-solving mindset, and curiosity about manufacturing, textiles, or hospitality.
+            </p>
+          </div>
+
+          <div class="lifecycle-step">
+            <div class="step-header">
+              <span class="step-badge">Stage 04</span>
+              <h4>Offer & Paid 6M Start</h4>
+            </div>
+            <p>
+              Receive your 6-month paid internship offer letter. You'll be assigned a dedicated senior mentor with clear performance milestones for permanent full-time conversion (PPO).
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section class="service-section career-form-section" id="apply">
+      <div class="section-container">
+        
+        <div class="career-form-container">
+          
+          <div class="form-intro-col">
+            <span class="section-kicker">Begin Your Journey</span>
+            <h2 class="section-heading">Apply for Consulting Internship</h2>
+            <p class="form-intro-desc">
+              Fill out the form below to apply for either the Analytics Consulting or Strategy Consulting track. Submissions are reviewed directly by our practice leads.
+            </p>
+
+            <div class="form-perks-checklist">
+              <div class="perk-check-item">
+                <span class="perk-check-icon">✓</span>
+                <div>
+                  <strong>6-Month Paid Engagement</strong>
+                  <p>Guaranteed monthly stipend with corporate mentorship.</p>
+                </div>
+              </div>
+              <div class="perk-check-item">
+                <span class="perk-check-icon">✓</span>
+                <div>
+                  <strong>PPO & Permanent Posting</strong>
+                  <p>Seamless transition to full-time Associate Consultant upon review.</p>
+                </div>
+              </div>
+              <div class="perk-check-item">
+                <span class="perk-check-icon">✓</span>
+                <div>
+                  <strong>Direct Client Deployments</strong>
+                  <p>Real consulting experience across textiles, manufacturing, and hospitality.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Zero-code Admin / Recruiter Notice Box -->
+            <div class="admin-notice-box">
+              <span class="admin-badge">Direct Recruiter Routing</span>
+              <p>
+                Applications submitted here with your uploaded resume are routed directly to the Sidd Consulting Talent Team. No third-party account required.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Application Form Card -->
+          <div class="form-card-col">
+            <div class="application-form-card">
+              
+              <div class="card-header">
+                <h3>Internship Application Form</h3>
+                <p>All fields marked with <span class="required-star">*</span> are required</p>
+              </div>
+
+              <!-- Form with zero-code FormSubmit or JS Webhook -->
+              <form class="career-application-form" id="careerMainForm" onsubmit="window.handleCareerApplication(event, this)">
+                
+                <!-- Full Name -->
+                <div class="form-group">
+                  <label for="applicantName">Full Name <span class="required-star">*</span></label>
+                  <input type="text" id="applicantName" name="fullName" placeholder="e.g. Rahul Sharma" required>
+                </div>
+
+                <!-- Role Selection Dropdown -->
+                <div class="form-group">
+                  <label for="applicantRole">Role <span class="required-star">*</span></label>
+                  <select id="applicantRole" name="role" required>
+                    <option value="" disabled selected>-- Select Consulting Track --</option>
+                    <option value="Analytics Consulting Intern">Analytics Consulting Intern (Data, Python, SQL)</option>
+                    <option value="Strategy Consulting Intern">Strategy Consulting Intern (SOPs, Process, Business Plans)</option>
+                    <option value="Open to Either Track">Open to Either Track (Based on partner evaluation)</option>
+                  </select>
+                </div>
+
+                <!-- Degree Selection Dropdown -->
+                <div class="form-group">
+                  <label for="applicantDegree">Degree <span class="required-star">*</span></label>
+                  <select id="applicantDegree" name="degree" required>
+                    <option value="" disabled selected>-- Select Highest / Current Degree --</option>
+                    <option value="B.Com">B.Com (Bachelor of Commerce - Final Year / Completed)</option>
+                    <option value="M.Com">M.Com (Master of Commerce - Final Year / Completed)</option>
+                    <option value="Other Commerce Equivalent">Other Equivalent Commerce / Business Degree</option>
+                  </select>
+                </div>
+
+                <!-- Email ID & Mobile Number in 2 Columns -->
+                <div class="form-row-2col">
+                  <div class="form-group">
+                    <label for="applicantEmail">Email ID <span class="required-star">*</span></label>
+                    <input type="email" id="applicantEmail" name="email" placeholder="rahul@example.com" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="applicantMobile">Mobile Number <span class="required-star">*</span></label>
+                    <input type="tel" id="applicantMobile" name="mobile" placeholder="+91 98765 43210" required>
+                  </div>
+                </div>
+
+                <!-- Resume Upload Drag & Drop Zone -->
+                <div class="form-group">
+                  <label for="applicantResume">Resume / CV (PDF or Word) <span class="required-star">*</span></label>
+                  <div class="file-drop-zone" id="fileDropZone" onclick="document.getElementById('applicantResume').click()">
+                    <input type="file" id="applicantResume" name="resume" accept=".pdf,.doc,.docx" required style="display: none;" onchange="window.handleFileSelect(this, 'fileUploadStatus')">
+                    <div class="drop-zone-content">
+                      <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="17 8 12 3 7 8"/>
+                        <line x1="12" y1="3" x2="12" y2="15"/>
+                      </svg>
+                      <span class="drop-text">Click to upload or drag & drop resume</span>
+                      <span class="drop-subtext">PDF, DOC, DOCX (Max 5MB)</span>
+                    </div>
+                  </div>
+                  <div class="file-status-indicator" id="fileUploadStatus"></div>
+                </div>
+
+                <!-- Sector Interest (Optional) -->
+                <div class="form-group">
+                  <label for="applicantInterest">Domain Curiosity / Experience (Optional)</label>
+                  <select id="applicantInterest" name="domainInterest">
+                    <option value="All Domains" selected>Interest across all sectors (Textiles, Mfg, Hospitality)</option>
+                    <option value="Textile Industry">Textile & Garment Manufacturing</option>
+                    <option value="Manufacturing & Industrial">Process & Discrete Manufacturing</option>
+                    <option value="Hospitality & Hotels">Hospitality & Hotel Operations</option>
+                  </select>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-submit-application" id="submitAppBtn">
+                  <span>Submit Application</span>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+                  </svg>
+                </button>
+
+                <p class="form-privacy-note">
+                  🔒 By submitting, your information will be processed solely for recruitment at Sidd Business Consulting.
+                </p>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Connect With Us Section (Above Footer) -->
+    <section class="connect-section" id="connect">
+      <div class="connect-container">
+        
+        <!-- Left Content -->
+        <div class="connect-content">
+          <h2 class="connect-title">Connect with us</h2>
+          <p class="connect-desc">
+            Interested in learning more about career paths or partnering with Sidd Business Consulting on enterprise initiatives? Speak with our leadership team today.
+          </p>
+          <button class="btn-connect-talk" onclick="window.openCareerApplyModal()">
+            <span>Speak with Talent Team</span>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 4l4 4-4 4"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Right Graphic: Geometric Lines Pattern in Sidd Blue -->
+        <div class="connect-graphic" aria-hidden="true">
+          <svg class="connect-lines-svg" viewBox="0 0 800 360" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="blueLatticeFadeCareer" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+                <stop offset="16%" stop-color="#ffffff" stop-opacity="0.9" />
+                <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+              </linearGradient>
+              <mask id="latticeMaskCareer">
+                <rect width="800" height="360" fill="url(#blueLatticeFadeCareer)" />
+              </mask>
+              <pattern id="blueLatticeCareer" width="28" height="360" patternUnits="userSpaceOnUse">
+                <line x1="0" y1="0" x2="0" y2="360" stroke="#0B2360" stroke-width="1.3" />
+                <line x1="0" y1="180" x2="28" y2="0" stroke="#0B2360" stroke-width="1.3" />
+                <line x1="0" y1="180" x2="28" y2="360" stroke="#0B2360" stroke-width="1.3" />
+              </pattern>
+            </defs>
+            <rect width="800" height="360" fill="url(#blueLatticeCareer)" mask="url(#latticeMaskCareer)" />
+          </svg>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo" aria-label="Sidd Business Consulting Homepage">
+          <img src="logo.png" alt="Sidd Logo" class="footer-logo-img">
+          <span class="footer-logo-sub">Business Consulting</span>
+        </a>
+        
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.97 0 1.76-.79 1.76-1.76a1.76 1.76 0 1 0-3.52 0c0 .97.79 1.76 1.76 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav-grid">
+        <div class="footer-section">
+          <h3 class="footer-heading">Services</h3>
+          <div class="heading-accent-bar" style="background-color: #0B2360;"></div>
+          <div class="footer-subcolumns">
+            <ul class="footer-link-list">
+              <li><a href="services.html" style="font-weight: 600; color: #0B2360;">All Services Overview</a></li>
+              <li><a href="business-transformation.html">Business Transformation</a></li>
+              <li><a href="process-automation.html">Process Automation</a></li>
+              <li><a href="growth-strategic-consulting.html">Growth & Strategic Consulting</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="business-transformation.html#workload-assessment">Workload Assessment</a></li>
+              <li><a href="business-transformation.html#sop-preparation">SOP Preparation</a></li>
+              <li><a href="process-automation.html#erp-implementation">ERP Implementation</a></li>
+              <li><a href="career.html" style="color: #0B2360; font-weight: 600;">Careers & Internships</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-heading">About Us</h3>
+          <div class="heading-accent-bar" style="background-color: #0B2360;"></div>
+          <div class="footer-subcolumns">
+            <ul class="footer-link-list">
+              <li><a href="about.html" style="font-weight: 600; color: #0B2360;">About Sidd Business Consulting</a></li>
+              <li><a href="about.html#cornerstones">The 4 Cornerstones</a></li>
+              <li><a href="career.html">Careers at Sidd</a></li>
+              <li><a href="about.html#philosophy">The Sidd Philosophy</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="index.html#news">News & Press Releases</a></li>
+              <li><a href="about.html#journey">Our Journey Since 2021</a></li>
+              <li><a href="index.html#case-studies">Client Success Stories</a></li>
+              <li><a href="#connect">Contact Advisory</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy</a>
+          <span class="legal-separator">|</span>
+          <a href="#terms">Terms</a>
+          <span class="legal-separator">|</span>
+          <a href="#security">Security</a>
+          <span class="legal-separator">|</span>
+          <a href="#certifications">Certifications</a>
+          <span class="legal-separator">|</span>
+          <a href="#sitemap">Sitemap</a>
+          <span class="legal-separator">|</span>
+          <a href="#do-not-sell">Do not sell or share my personal information</a>
+          <span class="legal-separator">|</span>
+          <a href="#accessibility">Accessibility</a>
+          <span class="legal-separator">|</span>
+          <a href="#cookies">Cookie Preferences</a>
+        </div>
+
+        <div class="footer-locale">
+          <button class="footer-locale-btn" id="footerLocaleBtn" aria-label="Region selector">
+            <span>IN - EN</span>
+            <span class="locale-arrow">▴</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>Copyright © 2026 Sidd Business Consulting Inc. All rights reserved</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Quick Apply Career Modal -->
+  <div class="modal-overlay" id="careerApplyModal" aria-hidden="true">
+    <div class="modal-card career-modal-card">
+      <button class="modal-close-btn" id="closeCareerModal" onclick="window.closeCareerApplyModal()" aria-label="Close Modal">✕</button>
+      
+      <div class="consult-header">
+        <span class="badge-accent">Paid Internship Application</span>
+        <h2>Apply to Sidd Business Consulting</h2>
+        <p>6-Month Paid Internship with Fast-Track Permanent Posting (PPO) for B.Com / M.Com Graduates.</p>
+      </div>
+
+      <form class="consult-form" id="careerModalForm" onsubmit="window.handleCareerApplication(event, this)">
+        
+        <div class="form-group">
+          <label for="modalApplicantName">Full Name <span class="required-star">*</span></label>
+          <input type="text" id="modalApplicantName" name="fullName" placeholder="Rahul Sharma" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="modalApplicantRole">Role <span class="required-star">*</span></label>
+            <select id="modalApplicantRole" name="role" required>
+              <option value="" disabled selected>-- Select Role --</option>
+              <option value="Analytics Consulting Intern">Analytics Consulting Intern</option>
+              <option value="Strategy Consulting Intern">Strategy Consulting Intern</option>
+              <option value="Open to Either Track">Open to Either Track</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="modalApplicantDegree">Degree <span class="required-star">*</span></label>
+            <select id="modalApplicantDegree" name="degree" required>
+              <option value="" disabled selected>-- Select Degree --</option>
+              <option value="B.Com">B.Com</option>
+              <option value="M.Com">M.Com</option>
+              <option value="Other Commerce Equivalent">Other Commerce Equivalent</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="modalApplicantEmail">Email ID <span class="required-star">*</span></label>
+            <input type="email" id="modalApplicantEmail" name="email" placeholder="rahul@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="modalApplicantMobile">Mobile Number <span class="required-star">*</span></label>
+            <input type="tel" id="modalApplicantMobile" name="mobile" placeholder="+91 98765 43210" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="modalApplicantResume">Resume / CV (PDF / Word) <span class="required-star">*</span></label>
+          <input type="file" id="modalApplicantResume" name="resume" accept=".pdf,.doc,.docx" required onchange="window.handleFileSelect(this, 'modalFileStatus')">
+          <div class="file-status-indicator" id="modalFileStatus"></div>
+        </div>
+
+        <button type="submit" class="btn-submit-consult">
+          Submit Application Now →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Search Modal Overlay -->
+  <div class="modal-overlay" id="searchModal" aria-hidden="true">
+    <div class="modal-card search-card">
+      <div class="search-header">
+        <div class="search-input-wrap">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="7" cy="7" r="4.5"/>
+            <path d="M10.5 10.5L14 14"/>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Search internships, analytics, strategy..." autofocus>
+        </div>
+        <button class="modal-close-btn" id="closeSearchModal" aria-label="Close Search">✕</button>
+      </div>
+      <div class="search-suggestions">
+        <span class="suggestion-label">Popular Searches:</span>
+        <button class="suggestion-tag" onclick="location.href='career.html#role-analytics'">Analytics Consulting Intern</button>
+        <button class="suggestion-tag" onclick="location.href='career.html#role-strategy'">Strategy Consulting Intern</button>
+        <button class="suggestion-tag" onclick="location.href='career.html#apply'">Application Form</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toastNotification" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toastMessage">Application submitted successfully!</span>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="logo-white.png" alt="Sidd" class="drawer-logo-img">
+      <button class="modal-close-btn" id="closeMobileDrawer">✕</button>
+    </div>
+    <div class="drawer-content">
+      <a href="services.html" class="drawer-link">All Services</a>
+      <a href="business-transformation.html" class="drawer-link">Business Transformation</a>
+      <a href="process-automation.html" class="drawer-link">Process Automation</a>
+      <a href="growth-strategic-consulting.html" class="drawer-link">Growth & Strategy</a>
+      <a href="career.html" class="drawer-link active">Careers & Internships</a>
+      <a href="career.html#apply" class="drawer-link" onclick="document.getElementById('mobileDrawer').classList.remove('active');">Apply for Internship</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+      <hr class="drawer-divider">
+      <button class="btn-consult mobile-consult-btn" onclick="window.openCareerApplyModal()">
+        <span>Quick Apply</span>
+        <span class="btn-arrow-circle">➔</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- EmailJS SDK for GitHub Pages Mail Delivery -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -91,16 +91,16 @@
         </li>
 
         <li class="nav-item has-dropdown">
-          <button class="nav-link-btn" aria-expanded="false" aria-haspopup="true">
+          <a href="about.html" class="nav-link-btn" aria-expanded="false" aria-haspopup="true">
             About Us <span class="chevron-down">▾</span>
-          </button>
+          </a>
           <div class="mega-dropdown dropdown-medium">
             <div class="dropdown-inner">
               <div class="dropdown-col">
                 <span class="dropdown-heading">Our Company</span>
-                <a href="#about" class="dropdown-item"><strong>About Sidd Business Consulting</strong><small>Leading enterprise strategy & IT transformation provider</small></a>
-                <a href="#leadership" class="dropdown-item"><strong>Leadership Team</strong><small>Meet our global leadership and board</small></a>
-                <a href="#partners" class="dropdown-item"><strong>Global Strategic Alliances</strong><small>Ecosystem of premier hyperscalers & tech leaders</small></a>
+                <a href="about.html" class="dropdown-item"><strong>About Sidd Business Consulting</strong><small>Founded in 2021 • Bringing operational clarity</small></a>
+                <a href="about.html#cornerstones" class="dropdown-item"><strong>The 4 Cornerstones</strong><small>Process, Technology, Analytics & Strategy</small></a>
+                <a href="about.html#journey" class="dropdown-item"><strong>Our Journey Since 2021</strong><small>Milestones of enterprise impact</small></a>
               </div>
               <div class="dropdown-col">
                 <span class="dropdown-heading">Impact</span>
@@ -112,22 +112,12 @@
         </li>
 
         <li class="nav-item">
-          <a href="#career" class="nav-link">Career</a>
+          <a href="career.html" class="nav-link">Career</a>
         </li>
       </ul>
 
       <!-- Right Actions & Controls -->
       <div class="nav-actions">
-        
-        <a href="#investors" class="utility-link">
-          <span>Investors</span>
-          <svg class="icon-external" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6">
-            <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5"/>
-          </svg>
-        </a>
-
-        <span class="action-separator">|</span>
-
         <!-- Country / Language -->
         <div class="lang-selector has-dropdown">
           <button class="lang-btn" id="langBtn" aria-label="Select Region and Language">
@@ -464,7 +454,7 @@
               </span>
             </button>
             <div class="faq-answer">
-              <p>Investors and stakeholders can explore our financial releases, corporate disclosures, and strategic growth updates through our dedicated Investors portal.</p>
+              <p>Clients and enterprise stakeholders can explore our corporate disclosures, methodology, and operational governance updates through our About Us section.</p>
             </div>
           </div>
         </div>
@@ -587,8 +577,8 @@
           <div class="heading-accent-bar"></div>
           <div class="footer-subcolumns">
             <ul class="footer-link-list">
-              <li><a href="#alliances">Alliances</a></li>
-              <li><a href="#careers">Careers</a></li>
+              <li><a href="about.html" style="font-weight: 600; color: #0B2360;">About Sidd Business Consulting</a></li>
+              <li><a href="career.html">Careers & Internships</a></li>
               <li><a href="#contact">Contact us</a></li>
               <li><a href="#citizenship">Corporate citizenship</a></li>
               <li><a href="#kinship">Kinship at Sidd</a></li>
@@ -723,10 +713,9 @@
     </div>
     <div class="drawer-content">
       <a href="services.html" class="drawer-link">Our Service</a>
+      <a href="about.html" class="drawer-link">About Us</a>
       <a href="#connect" class="drawer-link" onclick="document.getElementById('mobileDrawer').classList.remove('active');">Contact Us</a>
-      <a href="#about-us" class="drawer-link">About Us</a>
-      <a href="#career" class="drawer-link">Career</a>
-      <a href="#investors" class="drawer-link">Investors ↗</a>
+      <a href="career.html" class="drawer-link">Career</a>
       <hr class="drawer-divider">
       <button class="btn-consult mobile-consult-btn" onclick="window.openConsultModal()">
         <span>Consult an expert</span>
@@ -735,6 +724,8 @@
     </div>
   </div>
 
+  <!-- EmailJS SDK for GitHub Pages Mail Delivery -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
